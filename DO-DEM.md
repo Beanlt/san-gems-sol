@@ -32,3 +32,29 @@
 | DC 2026-09-13 22:41 | EBT | `J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc` | 106 | $45,480 | $265,672 | 0.0002656723313 | — | 0 nen | — | ..... | — | 7 | trending |
 | DC 2026-09-13 22:41 | INDEX | `3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ` | 202 | $111,480 | $639,766 | 0.0006688044377 | — | 0 nen | — | ..... | — | 7 | trending |
 | DC 2026-09-13 22:41 | HOOD | `HodeVUQ4msRAoUMdH8ExDCURULhdhuVTLTmkuiCqpump` | 5 | $96,946 | $989,293 | 0.0009814429868 | — | 0 nen | — | ..... | — | 0 | moi |
+| 2026-09-14 00:31 | YOYO | `BHS8LHW11NKxzxyCtqz9NJbTkh3h94WqeMVYgTY5pump` | 106 | $103,417 | $938,132 | 0.00094042338 | 29.6% | 3/24 | 0.2x | --3.. | 1.08 | 4541 | trending |
+| 2026-09-14 00:31 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 112 | $62,080 | $325,502 | 0.0003801864944 | 10.4% | 24/24 | 0.2x | 123.. | 1.19 | 53 | trending |
+| 2026-09-14 00:31 | Stunk | `FLk6FKAN26m1FT4ucguwy3uHBMzLKcEu8KMTYD2Zpump` | 831 | $40,324 | $139,611 | 0.000144639882 | 4.6% | 11/24 | 0.4x | 1--.. | 1.63 | 54 | trending |
+| 2026-09-14 00:31 | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 88 | $110,904 | $701,497 | 0.0007316363592 | 11.3% | 24/24 | 0.7x | 123.. | 1.04 | 168 | trending |
+| 2026-09-14 00:31 | EMBERCAT | `8iYPW781jBDu8zkC6PFY8WpvtbHxSVMgBX8aPnNmRY3z` | 37 | $80,412 | $671,355 | 0.0006715790048 | 48.7% | 0/24 | 0.1x | --3.. | 0.73 | 89 | trending |
+| 2026-09-14 00:31 | moonkey | `BRZ5aeJCDuruA42V1CntqKvofa2G7DS3yyxx1pZEpump` | 27 | $81,419 | $489,637 | 0.0005132063802 | 33.5% | 0/24 | 0.1x | --3.. | 1.43 | 408 | trending |
+| 2026-09-14 00:31 | MM | `zzjkh1hLbvsFJXWLfE6h4JNbcnRj4eteuKRw42PN2tC` | 9 | $75,837 | $356,205 | 0.0003562946665 | 25.1% | 13/24 | 0.0x | --3.. | 0.65 | 106 | trending |
+| 2026-09-14 00:31 | Leafy | `DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump` | 298 | $102,884 | $1,305,418 | 0.001320392158 | 63.3% | 0/24 | 1.4x | --3.. | 1.63 | 363 | trending |
+| 2026-09-14 00:31 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 12 | $70,151 | $84,710 | 0.000143165497 | 98.2% | 0/24 | 0.3x | --3.. | 0.92 | 72 | trending |
+| 2026-09-14 00:31 | Doggo | `FgJReZeYfmKZeWrCaGYL8gLnUixwBhjdHuRknC6ypump` | 59 | $54,136 | $310,472 | 0.0003207065277 | 48.1% | 0/24 | 0.6x | ---.. | 0.47 | 152 | trending |
+| 2026-09-14 00:31 | USEFUL | `GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83` | 25 | $143,121 | $1,045,085 | 0.001055642127 | 16.8% | 18/24 | 0.2x | 1--.. | 1.26 | 201 | trending |
+| 2026-09-14 00:31 | world | `FMqh9mqR6drPZqqW6wPqLHxX4rqNDWGhYLaMfoaJpump` | 86 | $131,532 | $667,575 | 0.0006675758416 | 20.0% | 8/24 | 1.3x | 1--.. | 4.54 | 1978 | trending |
+| 2026-09-14 00:31 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 3 | $133,947 | $1,003,702 | 0.001135843023 | 51.5% | 0/24 | 0.0x | --3.. | 0.38 | 599 | trending |
+| 2026-09-14 00:31 | KINS | `Tqj8yFmagrg7oorpQkVGYR52r96RFTamvWfth9bpump` | 11 | $192,145 | $1,496,937 | 0.001509453952 | 25.3% | 20/24 | 0.3x | -23.. | 0.12 | 2743 | trending |
+| 2026-09-14 00:31 | LONGCAT | `GKaYkXHF6n5mKQ9htxWjN1SaXw7nTXQT4Y8S8vMYpump` | 184 | $54,506 | $220,983 | 0.0002963369476 | 54.9% | 0/24 | 1.1x | ---.. | 1.50 | 1078 | trending |
+| 2026-09-14 00:31 | SOLCAT | `HmJDgky11u77hpBss6D8sjNpYPD5B6fWgSVDj58jpump` | 29 | $75,237 | $286,814 | 0.0002898673568 | 5.3% | 24/24 | 0.6x | 12-.. | 1.70 | 299 | trending |
+| DC 2026-09-14 00:31 | JubJub | `7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3` | 83 | $70,535 | $590,588 | 0.0005905884963 | — | 0 nen | — | ..... | — | 24 | trending |
+| DC 2026-09-14 00:31 | NINA | `H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump` | 245 | $59,314 | $360,817 | 0.000363277891 | — | 0 nen | — | ..... | — | 8 | trending |
+| DC 2026-09-14 00:31 | JubJub | `88t4EdAjiuUDzHujJnK5nywitQzYQWEJq2ouUgRGpump` | 60 | $79,528 | $546,432 | 0.0005464325592 | — | 0 nen | — | ..... | — | 25 | trending |
+| DC 2026-09-14 00:31 | STONK10 | `AqoPZcUumKUBHrnfBsNtoNuneYEjoimaiWYq8GH8gpX9` | 70 | $76,826 | $668,431 | 0.0006684726153 | — | 0 nen | — | ..... | — | 23 | trending |
+| DC 2026-09-14 00:31 | LEVERSTONK | `3RTC33FgYgtbhEzXdRgNb2oaVuGPTSyUMkwWPJLx7NBX` | 106 | $44,254 | $284,672 | 0.0002844479153 | — | 0 nen | — | ..... | — | 25 | trending |
+| DC 2026-09-14 00:31 | Tulip | `7vSG4GX8qz5V36noSde5Z9xV8xAXAGqivDyaNytPVDJf` | 89 | $76,175 | $730,052 | 0.0007302948102 | — | 0 nen | — | ..... | — | 30 | trending |
+| DC 2026-09-14 00:31 | HODL | `AmPojoiSMGzwMMmrXFzovcnUA8UuwSTBf1myCBbhR4Mf` | 74 | $48,698 | $236,244 | 0.0002558084153 | — | 0 nen | — | ..... | — | 31 | trending |
+| DC 2026-09-14 00:31 | EBT | `J53EGLkGxyC3mh45RVWxYtETEj2T9G3YnUPX5nn6AXGc` | 132 | $52,498 | $349,928 | 0.0003499284248 | — | 0 nen | — | ..... | — | 9 | trending |
+| DC 2026-09-14 00:31 | Noiz | `Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump` | 118 | $44,651 | $208,842 | 0.0002099331857 | — | 0 nen | — | ..... | — | 29 | trending |
+| DC 2026-09-14 00:31 | INDEX | `3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ` | 108 | $81,011 | $352,813 | 0.0003671371969 | — | 0 nen | — | ..... | — | 9 | trending |
