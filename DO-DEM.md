@@ -225,3 +225,56 @@
 | DC 2026-09-15 05:28 | BRAIN | `9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump` | 626 | $66,145 | $463,744 | 0.0004637448889 | — | 0 nen | — | ..... | — | 8 | trending |
 | DC 2026-09-15 05:28 | PTN | `PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP` | 195 | $346,309 | $459,686 | 13.45716784 | — | 0 nen | — | ..... | — | 9 | trending |
 | DC 2026-09-15 05:28 | INDEX | `3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ` | 29 | $96,801 | $469,062 | 0.0004690723681 | — | 0 nen | — | ..... | — | 38 | trending |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-14 05:32 | 24h | 0.0003376216349 | 0.0004971426975 | +47.2% |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-15 05:28 | 6h | 0.0004414006517 | 0.0004971426975 | +12.6% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-14 05:32 | 24h | 0.000851611261 | 0.0006930575999 | -18.6% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-15 05:28 | 6h | 0.0006630406954 | 0.0006930575999 | +4.5% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-14 05:32 | 24h | 0.0001545834708 | 0.0001595628807 | +3.2% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-15 05:28 | 6h | 0.0001912080608 | 0.0001595628807 | -16.6% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-14 05:32 | 24h | 0.001162690908 | 0.001136363846 | -2.3% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-15 05:28 | 6h | 0.001143118279 | 0.001136363846 | -0.6% |
+| KQ | KINS | `Tqj8yFmagrg7oorpQkVGYR52r96RFTamvWfth9bpump` | 2026-09-14 05:32 | 24h | 0.001424659682 | 0.001294037282 | -9.2% |
+| KQ | KINS | `Tqj8yFmagrg7oorpQkVGYR52r96RFTamvWfth9bpump` | 2026-09-15 05:28 | 6h | 0.001311552963 | 0.001294037282 | -1.3% |
+| KQ | YOYO | `BHS8LHW11NKxzxyCtqz9NJbTkh3h94WqeMVYgTY5pump` | 2026-09-14 05:32 | 24h | 0.0007490732779 | 0.0003429397336 | -54.2% |
+| KQ | YOYO | `BHS8LHW11NKxzxyCtqz9NJbTkh3h94WqeMVYgTY5pump` | 2026-09-15 05:28 | 6h | 0.0005644106282 | 0.0003429397336 | -39.2% |
+| KQ | EMBERCAT | `8iYPW781jBDu8zkC6PFY8WpvtbHxSVMgBX8aPnNmRY3z` | 2026-09-14 05:32 | 24h | 0.0006508076384 | 0.0003481764472 | -46.5% |
+| KQ | EMBERCAT | `8iYPW781jBDu8zkC6PFY8WpvtbHxSVMgBX8aPnNmRY3z` | 2026-09-15 05:28 | 6h | 0.0003343151877 | 0.0003481764472 | +4.1% |
+| KQ | UPTOBER | `6vVfbQVRSXcfyQamPqCzcqmA86vCzb2d7B7gmDDqpump` | 2026-09-14 05:32 | 24h | 0.0005580793791 | 0.0006894614878 | +23.5% |
+| KQ | UPTOBER | `6vVfbQVRSXcfyQamPqCzcqmA86vCzb2d7B7gmDDqpump` | 2026-09-15 05:28 | 6h | 0.0005702463862 | 0.0006894614878 | +20.9% |
+| KQ | FLAME | `9oXA1VWKNiYDYa6VKHBFFBBvZdvuhw1b2eD5Aka7YrVt` | 2026-09-15 05:28 | 6h | 0.000632331828 | 0.0008323764588 | +31.6% |
+| KQ | wheelsmith | `EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump` | 2026-09-15 05:28 | 6h | 0.0004217147524 | 0.0002719414177 | -35.5% |
+| KQ | Zoe | `7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump` | 2026-09-15 05:28 | 6h | 0.0004090559437 | 0.0003158730632 | -22.8% |
+| KQ | Noiz | `Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump` | 2026-09-15 05:28 | 6h | 0.0006784185984 | 0.000667029422 | -1.7% |
+| KQ | STONK10 | `AqoPZcUumKUBHrnfBsNtoNuneYEjoimaiWYq8GH8gpX9` | 2026-09-15 05:28 | 6h | 0.001433634452 | 0.002090764878 | +45.8% |
+| KQ | DREGG | `XkeTXo1125vz5H9svJpGiw4JvLbN8VmMu9cmMvspump` | 2026-09-15 05:28 | 6h | 0.001388890057 | 0.001896446186 | +36.5% |
+| KQ | ALLINU | `4MMQY9bwkxxTtsK3W227Q5ABT6yFY8Pmn9Ze7wmAXKY8` | 2026-09-15 05:28 | 6h | 0.001153883389 | 0.002213069266 | +91.8% |
+| KQ | LOOM | `CB1YQfUzgsnaCd93cZLdiX1uASW7utWBaYMUsvcwNUBV` | 2026-09-15 05:28 | 6h | 0.001286813286 | 0.001417878532 | +10.2% |
+| KQ | JubJub | `7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3` | 2026-09-15 05:28 | 6h | 0.0007724420831 | 0.0008455926587 | +9.5% |
+| KQ | CYBERLEEK | `ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg` | 2026-09-15 05:28 | 6h | 0.0005355421003 | 0.0005400208393 | +0.8% |
+| 2026-09-15 12:13 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 78 | $74,835 | $94,412 | 0.0001595628807 | 78.6% | 0/24 | 0.0x | ---.. | 2.29 | 107 | trending |
+| 2026-09-15 12:13 | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 55 | $110,061 | $666,427 | 0.0006930575999 | 10.9% | 24/24 | 0.1x | 123.. | 1.49 | 203 | trending |
+| 2026-09-15 12:13 | Zoe | `7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump` | 21 | $71,022 | $317,088 | 0.0003158730632 | 7.8% | 24/24 | 0.2x | 123.. | 0.68 | 687 | trending |
+| 2026-09-15 12:13 | Noiz | `Adgt7dseCq71eN6GDuoUgpsNQp81ZNhq24nrF7pxpump` | 28 | $79,725 | $663,477 | 0.000667029422 | 29.8% | 1/24 | 0.1x | ---.. | 0.57 | 65 | trending |
+| 2026-09-15 12:13 | JubJub | `7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3` | 34 | $88,257 | $845,933 | 0.0008455926587 | 32.9% | 0/24 | 0.0x | ---.. | 0.75 | 59 | trending |
+| 2026-09-15 12:13 | FLAME | `9oXA1VWKNiYDYa6VKHBFFBBvZdvuhw1b2eD5Aka7YrVt` | 30 | $112,712 | $832,360 | 0.0008323764588 | 24.5% | 13/24 | 0.0x | 1--.. | 0.95 | 98 | trending |
+| 2026-09-15 12:13 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 78 | $78,571 | $472,617 | 0.0004971426975 | 13.7% | 24/24 | 0.1x | 123.. | 1.46 | 89 | trending |
+| 2026-09-15 12:13 | PURPS | `purpFPo5voy6fEu8jxSCwVdMs1zyYEYAH6FBQvTYCZK` | 73 | $109,435 | $1,465,633 | 0.001594843219 | 32.7% | 0/24 | 0.4x | ---.. | 2.47 | 616 | trending |
+| 2026-09-15 12:13 | wheelsmith | `EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump` | 109 | $55,769 | $296,852 | 0.0002719414177 | 54.4% | 0/24 | 0.2x | --3.. | 1.27 | 240 | trending |
+| 2026-09-15 12:13 | YOYO | `BHS8LHW11NKxzxyCtqz9NJbTkh3h94WqeMVYgTY5pump` | 75 | $64,548 | $342,488 | 0.0003429397336 | 10.1% | 24/24 | 0.3x | 12-.. | 1.07 | 4577 | trending |
+| 2026-09-15 12:13 | MENSA | `CFPkPq1eYPR8GLzEo59wUbbMioX4bshaTQiSGzTSpump` | 8 | $100,844 | $503,329 | 0.0005033298147 | 19.9% | 16/24 | 0.0x | 1-3.. | 0.28 | 1810 | trending |
+| 2026-09-15 12:13 | KINS | `Tqj8yFmagrg7oorpQkVGYR52r96RFTamvWfth9bpump` | 8 | $178,215 | $1,283,306 | 0.001294037282 | 21.8% | 24/24 | 0.1x | 12-.. | 2.25 | 2778 | trending |
+| 2026-09-15 12:13 | LOOM | `CB1YQfUzgsnaCd93cZLdiX1uASW7utWBaYMUsvcwNUBV` | 33 | $187,072 | $1,374,640 | 0.001417878532 | 32.7% | 0/24 | 0.1x | ---.. | 1.90 | 833 | trending |
+| 2026-09-15 12:13 | EMBERCAT | `8iYPW781jBDu8zkC6PFY8WpvtbHxSVMgBX8aPnNmRY3z` | 32 | $55,671 | $348,153 | 0.0003481764472 | 23.8% | 8/24 | 0.1x | 1--.. | 2.29 | 125 | trending |
+| 2026-09-15 12:13 | MOS | `4ChT49V1iazP2XUGtycGkEsS6pRMqvGfUbqvRC9Z91ZT` | 1 | $210,546 | $784,856 | 0.0007607677932 | 25.6% | 3/24 | 0.4x | --3.. | 0.20 | 830 | trending |
+| 2026-09-15 12:13 | CYBERLEEK | `ApZuxdpzMrbEYTGEzeY9afh5pj9d6qPRJCTgQYiipbKg` | 11 | $244,673 | $394,170 | 0.0005400208393 | 1.8% | 24/24 | 0.1x | 12-.. | 2.00 | 735 | trending |
+| 2026-09-15 12:13 | UPTOBER | `6vVfbQVRSXcfyQamPqCzcqmA86vCzb2d7B7gmDDqpump` | 7 | $146,532 | $622,731 | 0.0006894614878 | 58.5% | 0/24 | 0.3x | --3.. | 0.29 | 16981 | trending |
+| 2026-09-15 12:13 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 11 | $135,470 | $1,004,160 | 0.001136363846 | 51.2% | 0/24 | 0.2x | ---.. | 0.58 | 635 | trending |
+| DC 2026-09-15 12:13 | NINA | `H22aquDouZNFyfykwnXmY5Y9z5sMQtLFy5tUKR99pump` | 88 | $52,971 | $256,675 | 0.0002596894986 | — | 0 nen | — | ..... | — | 44 | trending |
+| DC 2026-09-15 12:13 | HUHCAT | `A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH` | 278 | $78,538 | $682,410 | 0.0006824106476 | — | 0 nen | — | ..... | — | 10 | trending |
+| DC 2026-09-15 12:13 | WET | `H1q6vF9X2ewo7XxqJ2qb2uTdwkjDLAWF1Y3SefRAUTGZ` | 257 | $114,822 | $1,426,904 | 0.001427772358 | — | 0 nen | — | ..... | — | 16 | trending |
+| DC 2026-09-15 12:13 | BRAIN | `9LuwgFQemAoV9rgVBBtwbRSxBmamcRRbysEK8yL2pump` | 337 | $65,842 | $415,935 | 0.0004159356787 | — | 0 nen | — | ..... | — | 14 | trending |
+| DC 2026-09-15 12:13 | TOEROGAN | `FbYYdLRX2sL5xzLGjdhfaWNhtpxqXBSoqvUY8o8W8eNF` | 91 | $94,215 | $1,151,203 | 0.001093608226 | — | 0 nen | — | ..... | — | 33 | trending |
+| DC 2026-09-15 12:13 | bruh | `6tRotGypA5QJKwmfgGFe4yp36eNQ4Vz7m8MNNpBnpYmq` | 758 | $45,706 | $254,519 | 0.0002600161312 | — | 0 nen | — | ..... | — | 3 | trending |
+| DC 2026-09-15 12:13 | PTN | `PTNzAfFAB4LvoUQEUUGrFMyUoRLExMYjH6CcfyQfsVP` | 44 | $82,112 | $452,800 | 13.30748498 | — | 0 nen | — | ..... | — | 16 | trending |
+| DC 2026-09-15 12:13 | INDEX | `3Sv4Jriwo2V7c1wturGVrrpfKc9XbGxewnDHpMLrpbWQ` | 39 | $97,857 | $436,599 | 0.0004366090176 | — | 0 nen | — | ..... | — | 45 | trending |
+| DC 2026-09-15 12:13 | OpenClaw | `Di6GE7pJTYHFZPz1r19FyRfjLcpQPwkvTACtRRFjG7uF` | 124 | $60,419 | $67,458 | 7.078459239e-05 | — | 0 nen | — | ..... | — | 0 | moi |
