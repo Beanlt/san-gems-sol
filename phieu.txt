@@ -1,4 +1,4 @@
-PHIEU · MAY SOLANA · 2026-09-18 00:47 UTC
+PHIEU · MAY SOLANA · 2026-09-18 07:37 UTC
 NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu chay)
    LOC THO : mc $50,000-$1,500,000 · tong pool >= $40,000 · tuoi >= 48h
    VE 1 da rot nat : gia <= 25% dinh (dinh = CLOSE nen 1h, KHONG lay rau)
@@ -14,33 +14,43 @@ NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu cha
 
 feed: 120 pool doc duoc · 1 trang loi
    ⛔ moi trang 1: HTTP 429
-cham ket qua anh cu (moc 6/24/72 gio): 12 dong moi
-qua loc tho: 8 · pool qua non (<48h tuoi): 6
-doc duoc nen: 8 · loi goi: 0
-qua VE 1+2+3 (hinh dang gia): 2
+cham ket qua anh cu (moc 6/24/72 gio): 15 dong moi
+qua loc tho: 10 · pool qua non (<48h tuoi): 3
+doc duoc nen: 10 · loi goi: 0
+qua VE 1+2+3 (hinh dang gia): 3
 
-world  FMqh9mqR6drPZqqW6wPqLHxX4rqNDWGhYLaMfoaJpump
-   VE 1 ✅ da rot nat : gia $0.000420716 = 12.6% dinh  (cua <=25%) · 246h tu dinh
-   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.00083342 (cua >=20)
-   VE 3 ✅ het tao day: day 12h sau $0.000412447 / day 12h truoc $0.00024786
-   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.2x nen · $1,414 / nen $1,163
+AGI  CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h
+   VE 1 ✅ da rot nat : gia $0.00087908 = 10.0% dinh  (cua <=25%) · 277h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.002208646 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000799344 / day 12h truoc $0.000686664
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $1,262 / nen $5,874
    VE 4 ⬜ sach nang: ⛔ unknown url type: ''
-        khu hoi $250 = 0.97% (cua <=5.0%) · tong pool $105,382 · phi ~0.25%/chieu
-   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 1.00 · h24 0.74 · vi mua/ban 0.86
-   von hoa $420,716 · cap SOL · vol24 $53,188 · tuoi 2074h · nguon trending
+        khu hoi $250 = 0.85% (cua <=5.0%) · tong pool $142,298 · phi ~0.25%/chieu
+   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 2.33 · h24 1.14 · vi mua/ban 2.33
+   von hoa $843,356 · cap ANTHRP · vol24 $279,597 · tuoi 329h · nguon trending
 
-Nasduck  7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze
-   VE 1 ✅ da rot nat : gia $0.00041119 = 6.5% dinh  (cua <=25%) · 236h tu dinh
-   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001589315 (cua >=20)
-   VE 3 ✅ het tao day: day 12h sau $0.00041119 / day 12h truoc $0.000340149
-   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.8x nen · $5,488 / nen $7,104
+Martians  7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump
+   VE 1 ✅ da rot nat : gia $0.000366938 = 8.8% dinh  (cua <=25%) · 559h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001037249 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000366938 / day 12h truoc $0.000290493
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.5x nen · $4,233 / nen $2,806
    VE 4 ⬜ sach nang: ⛔ unknown url type: ''
-        khu hoi $250 = 1.07% (cua <=5.0%) · tong pool $88,317 · phi ~0.25%/chieu
-   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 0.79 · h24 1.29 · vi mua/ban 0.84
-   von hoa $412,934 · cap SOL · vol24 $180,908 · tuoi 264h · nguon trending
+        khu hoi $250 = 1.20% (cua <=5.0%) · tong pool $71,006 · phi ~0.25%/chieu
+   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 3.18 · h24 1.19 · vi mua/ban 3.27
+   von hoa $352,134 · cap SOL · vol24 $106,986 · tuoi 1129h · nguon trending
 
-da ghi 8 dong anh chup + 6 dong ro doi chung vao DO-DEM.md
+JUPCAT  AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh
+   VE 1 ✅ da rot nat : gia $0.000404248 = 21.5% dinh  (cua <=25%) · 170h tu dinh
+   VE 2 ✅ da nam li  : 23/24 gio nam duoi $0.000470422 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00030812 / day 12h truoc $0.000247324
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.4x nen · $2,017 / nen $4,618
+   VE 4 ⬜ sach nang: ⛔ unknown url type: ''
+        khu hoi $250 = 1.28% (cua <=5.0%) · tong pool $64,192 · phi ~0.25%/chieu
+   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 0.58 · h24 1.33 · vi mua/ban 0.62
+   von hoa $385,412 · cap JUP · vol24 $148,384 · tuoi 285h · nguon trending
+
+da ghi 10 dong anh chup + 3 dong ro doi chung vao DO-DEM.md
 danh sach theo doi (qua 1-2-3-4): 0
 ung vien (du ca 5 ve): 0
 KHONG CO UNG VIEN MOI
-[23 cu · 155 giay]
+[27 cu · 178 giay]
