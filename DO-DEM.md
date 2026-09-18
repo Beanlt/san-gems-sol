@@ -824,3 +824,30 @@
 | DC 2026-09-18 13:13 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 85 | $58,748 | $251,247 | 0.0002752589889 | — | 0 nen | — | ..... | — | 25 | trending |
 | DC 2026-09-18 13:13 | LinkedInu | `FvhorDts9M8uJekzs3pBcYUPUjWtCTrGLhdv3ADHyeRY` | 61 | $117,659 | $1,495,372 | 0.001495372686 | — | 0 nen | — | ..... | — | 38 | trending |
 | DC 2026-09-18 13:13 | $EPEP | `7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki` | 70 | $91,767 | $655,657 | 0.0006556423198 | — | 0 nen | — | ..... | — | 22 | trending |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-15 17:22 | 72h | 0.0009063640244 | 0.0003714227723 | -59.0% |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-17 13:50 | 24h | 0.000427944309 | 0.0003714227723 | -13.2% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-15 17:22 | 72h | 0.0001548591249 | 0.0001962803637 | +26.7% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-17 13:50 | 24h | 0.0001488014303 | 0.0001962803637 | +31.9% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-15 17:22 | 72h | 0.001078969358 | 0.001051122039 | -2.6% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-17 13:50 | 24h | 0.0008367679143 | 0.001051122039 | +25.6% |
+| KQ | USEFUL | `GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83` | 2026-09-17 13:50 | 24h | 0.001164692182 | 0.001547511113 | +32.9% |
+| KQ | STONK10 | `AqoPZcUumKUBHrnfBsNtoNuneYEjoimaiWYq8GH8gpX9` | 2026-09-15 05:28 | 72h | 0.001433634452 | 0.002485495184 | +73.4% |
+| KQ | JubJub | `7tFbGa9wt4Q4yxNAdaDcTKahv4WPrJtXh6ty7gjWyKx3` | 2026-09-15 17:22 | 72h | 0.0008239237851 | 0.001717458388 | +108.4% |
+| 2026-09-18 17:55 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 393 | $89,346 | $116,137 | 0.0001962803637 | 96.1% | 0/24 | 6.6x | --3.. | 2.83 | 185 | trending |
+| 2026-09-18 17:55 | Pepe | `B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B` | 168 | $334,978 | $1,145,397 | 0.001145397405 | 85.1% | 0/24 | 0.8x | --3.. | 0.93 | 20304 | trending |
+| 2026-09-18 17:55 | POT | `4R2vepDVY7Gdcm2VKuAy6EbBfWsYSEsDJou1QGKuMfnf` | 92 | $53,689 | $199,844 | 0.0001998445073 | 34.1% | 10/24 | 1.3x | --3.. | 0.81 | 64 | trending |
+| 2026-09-18 17:55 | Martians | `7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump` | 4 | $72,000 | $342,073 | 0.0003570294344 | 8.5% | 24/24 | 0.5x | 123.. | 1.25 | 1139 | trending |
+| 2026-09-18 17:55 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 20 | $73,924 | $353,305 | 0.0003714227723 | 10.2% | 24/24 | 0.3x | 123.. | 0.71 | 166 | trending |
+| 2026-09-18 17:55 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 8 | $138,881 | $928,835 | 0.001051122039 | 47.7% | 0/24 | 1.0x | --3.. | 0.42 | 712 | trending |
+| 2026-09-18 17:55 | BITCAT | `2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK` | 11 | $47,853 | $222,445 | 0.0002224610643 | 18.1% | 24/24 | 1.1x | 123.. | 1.40 | 204 | trending |
+| 2026-09-18 17:55 | UNI | `uniHfuPhEQSrtpzXpJZDCSq53yaejKKpNhFUiKoHKHV` | 43 | $148,001 | $554,739 | 8.890522087 | 96.9% | 0/24 | 0.7x | --3.. | 0.31 | 197 | trending |
+| 2026-09-18 17:55 | AGI | `CaWZeUM4FvX9dPkjGc2xHS6tSN3qJfTWyvaG77aM5o7h` | 8 | $149,833 | $961,759 | 0.0009732146415 | 11.0% | 24/24 | 0.3x | 123.. | 0.89 | 339 | trending |
+| 2026-09-18 17:55 | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 31 | $77,093 | $564,630 | 0.0005680410881 | 30.3% | 18/24 | 1.8x | --3.. | 0.84 | 296 | trending |
+| 2026-09-18 17:55 | nub | `GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn` | 1549 | $348,594 | $475,300 | 0.0004766092447 | 6.8% | 2/24 | 90.5x | 1--.. | 1.19 | 21784 | trending |
+| DC 2026-09-18 17:55 | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 592 | $140,444 | $1,459,322 | 0.001475270725 | — | 0 nen | — | ..... | — | 27 | trending |
+| DC 2026-09-18 17:55 | SOLCAT | `9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1` | 295 | $114,735 | $1,089,009 | 0.001099000544 | — | 0 nen | — | ..... | — | 23 | trending |
+| DC 2026-09-18 17:55 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 230 | $66,345 | $469,165 | 0.0004726958384 | — | 0 nen | — | ..... | — | 30 | trending |
+| DC 2026-09-18 17:55 | xp | `pgtgG6UCiyA49ShyETG2wpcMAvtLSvNp22UaJ1FWp3P` | 89 | $121,282 | $1,096,744 | 0.001096744603 | — | 0 nen | — | ..... | — | 45 | trending |
+| DC 2026-09-18 17:55 | $EPEP | `7rUNV1HjfCzbtGi3ZbKQ5hYXVjzbAfyCTcgTULQxCwki` | 69 | $73,154 | $429,630 | 0.0004296307992 | — | 0 nen | — | ..... | — | 26 | trending |
+| DC 2026-09-18 17:55 | SPUNK | `2HF8xLbQCpzh8j5iHMzqjSiw3EP6U73MR8VnJD9cV7Ht` | 92 | $125,150 | $62,776 | 6.277630103e-05 | — | 0 nen | — | ..... | — | 0 | moi |
+| DC 2026-09-18 17:55 | FOX | `9MdENr3zeG4pqZg9NMk3GQhS6UAXDSNvYE5qo9yZ2thG` | 83 | $52,957 | $53,296 | 5.465883923e-05 | — | 0 nen | — | ..... | — | 0 | moi |
