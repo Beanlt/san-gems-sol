@@ -1016,3 +1016,40 @@
 | DC 2026-09-19 16:07 | SOLCAT | `9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1` | 116 | $61,668 | $308,103 | 0.0003006993631 | — | 0 nen | — | ..... | — | 45 | trending |
 | DC 2026-09-19 16:07 | Prism | `5zNmPYCm724a7HLE8FXB2d6R3BbsuPSjzNAxBmkHpump` | 318 | $63,292 | $428,189 | 0.0004226804992 | — | 0 nen | — | ..... | — | 18 | trending |
 | DC 2026-09-19 16:07 | Meepcat | `4ssDxLh4BpzVVC6WsZHfoSYAVDhR8hpWzekyoGzYpump` | 1 | $276,154 | $341,310 | 0.0003429346665 | — | 0 nen | — | ..... | — | 27 | trending |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-16 18:29 | 72h | 0.0007113600929 | 0.000340497097 | -52.1% |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-18 17:55 | 24h | 0.0003714227723 | 0.000340497097 | -8.3% |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-19 11:36 | 6h | 0.0003568363271 | 0.000340497097 | -4.6% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-15 21:51 | 72h | 0.0005032976865 | 0.0005986310171 | +18.9% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-16 00:54 | 72h | 0.0004072296874 | 0.0005986310171 | +47.0% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-16 07:59 | 72h | 0.0004606625141 | 0.0005986310171 | +30.0% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-16 13:48 | 72h | 0.0003726580339 | 0.0005986310171 | +60.6% |
+| KQ | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 2026-09-16 18:29 | 72h | 0.0002755375237 | 0.0005986310171 | +117.3% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-16 18:29 | 72h | 0.000117849252 | 0.0002521991505 | +114.0% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-18 17:55 | 24h | 0.0001962803637 | 0.0002521991505 | +28.5% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-19 11:36 | 6h | 0.000262788156 | 0.0002521991505 | -4.0% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-16 18:29 | 72h | 0.0009245075178 | 0.0009744042044 | +5.4% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-18 17:55 | 24h | 0.001051122039 | 0.0009744042044 | -7.3% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-19 11:36 | 6h | 0.001124480907 | 0.0009744042044 | -13.3% |
+| KQ | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 2026-09-18 17:55 | 24h | 0.0005680410881 | 0.001292072743 | +127.5% |
+| KQ | Pepe | `B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B` | 2026-09-18 17:55 | 24h | 0.001145397405 | 0.001555488119 | +35.8% |
+| KQ | Pepe | `B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B` | 2026-09-19 11:36 | 6h | 0.001393808898 | 0.001555488119 | +11.6% |
+| KQ | nub | `GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn` | 2026-09-18 17:55 | 24h | 0.0004766092447 | 0.0002271958806 | -52.3% |
+| KQ | nub | `GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn` | 2026-09-19 11:36 | 6h | 0.0002195349089 | 0.0002271958806 | +3.5% |
+| KQ | PEPARK | `6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump` | 2026-09-19 11:36 | 6h | 0.0001429771043 | 0.0001405967859 | -1.7% |
+| 2026-09-19 18:59 | PEPARK | `6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump` | 8 | $49,178 | $124,075 | 0.0001405967859 | 97.7% | 0/24 | 0.3x | --3.. | 1.10 | 1121 | trending |
+| 2026-09-19 18:59 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 77 | $101,463 | $149,224 | 0.0002521991505 | 97.7% | 0/24 | 1.1x | --3.. | 2.55 | 210 | trending |
+| 2026-09-19 18:59 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 91 | $86,298 | $791,429 | 0.000797384125 | 97.5% | 0/24 | 0.5x | ---.. | 1.11 | 55 | trending |
+| 2026-09-19 18:59 | nub | `GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn` | 18 | $240,441 | $227,601 | 0.0002271958806 | 3.1% | 24/24 | 0.2x | 12-.. | 0.97 | 21809 | trending |
+| 2026-09-19 18:59 | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 80 | $125,034 | $1,292,034 | 0.001292072743 | 72.5% | 0/24 | 2.7x | --3.. | 1.06 | 321 | trending |
+| 2026-09-19 18:59 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 17 | $134,027 | $861,042 | 0.0009744042044 | 44.5% | 0/24 | 0.8x | ---.. | 1.17 | 737 | trending |
+| 2026-09-19 18:59 | xp | `pgtgG6UCiyA49ShyETG2wpcMAvtLSvNp22UaJ1FWp3P` | 95 | $120,619 | $1,073,861 | 0.001073861744 | 51.5% | 0/24 | 2.3x | ---.. | 2.09 | 70 | trending |
+| 2026-09-19 18:59 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 48 | $70,917 | $323,888 | 0.000340497097 | 9.2% | 24/24 | 2.7x | 12-.. | 2.06 | 191 | trending |
+| 2026-09-19 18:59 | PATE | `24EX9CQqEpR9mNUDTjkooKqRTf2pkY2mgbDqwNDwpump` | 52 | $65,987 | $360,869 | 0.0004182991537 | 84.6% | 0/24 | 1.1x | --3.. | 1.22 | 693 | trending |
+| 2026-09-19 18:59 | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 76 | $109,738 | $580,441 | 0.0005986310171 | 9.7% | 24/24 | 2.7x | 123.. | 1.26 | 306 | trending |
+| DC 2026-09-19 18:59 | KMS | `D1sm1V3pHGTv32ugeXoer4a91xqfuh4jJBYQwePSKVez` | 66 | $44,157 | $192,162 | 0.0001979049494 | — | 0 nen | — | ..... | — | 22 | trending |
+| DC 2026-09-19 18:59 | MCAT | `241aTYhVXZ4WBVSFpfY37RqoCGBQ73KiRFAKvTtnmoon` | 81 | $94,819 | $508,257 | 0.0005082577044 | — | 0 nen | — | ..... | — | 46 | trending |
+| DC 2026-09-19 18:59 | SOLCAT | `9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1` | 154 | $71,419 | $408,419 | 0.000411921676 | — | 0 nen | — | ..... | — | 48 | trending |
+| DC 2026-09-19 18:59 | TIPPED | `tipp4C4Jnpft26HC9VXNjUPidojZqxXf8nzKvrKf5BS` | 5088 | $115,532 | $1,258,344 | 0.001209646265 | — | 0 nen | — | ..... | — | 2 | trending |
+| DC 2026-09-19 18:59 | Prism | `5zNmPYCm724a7HLE8FXB2d6R3BbsuPSjzNAxBmkHpump` | 145 | $48,059 | $281,561 | 0.0002510991717 | — | 0 nen | — | ..... | — | 21 | trending |
+| DC 2026-09-19 18:59 | Meepcat | `4ssDxLh4BpzVVC6WsZHfoSYAVDhR8hpWzekyoGzYpump` | 1 | $286,957 | $339,539 | 0.0003411435733 | — | 0 nen | — | ..... | — | 29 | trending |
+| DC 2026-09-19 18:59 | PEPE | `PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m` | 183 | $343,349 | $939,824 | 4.341257396e-06 | — | 0 nen | — | ..... | — | 21 | trending |
