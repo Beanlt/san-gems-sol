@@ -1,4 +1,4 @@
-PHIEU · MAY SOLANA · 2026-09-18 21:16 UTC
+PHIEU · MAY SOLANA · 2026-09-19 00:39 UTC
 NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu chay)
    LOC THO : mc $50,000-$1,500,000 · tong pool >= $40,000 · tuoi >= 48h
    VE 1 da rot nat : gia <= 25% dinh (dinh = CLOSE nen 1h, KHONG lay rau)
@@ -12,26 +12,24 @@ NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu cha
    KHONG CO MOC BAN. Qua 1-2-3-4 = DANH SACH THEO DOI, chua phai ung vien.
    ⬜ MOI NGUONG TREN BE TU MAY ROBINHOOD, CHUA CA NAO DO TREN SOLANA.
 
-feed: 100 pool doc duoc · 2 trang loi
-   ⛔ moi trang 1: HTTP 429
-   ⛔ moi trang 2: HTTP 429
-cham ket qua anh cu (moc 6/24/72 gio): 15 dong moi
-qua loc tho: 12 · pool qua non (<48h tuoi): 6
+feed: 138 pool doc duoc · 0 trang loi
+cham ket qua anh cu (moc 6/24/72 gio): 16 dong moi
+qua loc tho: 12 · pool qua non (<48h tuoi): 8
 doc duoc nen: 12 · loi goi: 0
 qua VE 1+2+3 (hinh dang gia): 1
 
 BITCAT  2bDQvnvwd7rNbm4o3JNdN6z9c7MVzp4yqHJPNXPiSTNK
-   VE 1 ✅ da rot nat : gia $0.00020498 = 16.4% dinh  (cua <=25%) · 194h tu dinh
+   VE 1 ✅ da rot nat : gia $0.000185107 = 14.8% dinh  (cua <=25%) · 197h tu dinh
    VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000312219 (cua >=20)
-   VE 3 ✅ het tao day: day 12h sau $0.000183821 / day 12h truoc $0.000150678
-   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.3x nen · $428 / nen $1,456
+   VE 3 ✅ het tao day: day 12h sau $0.000173871 / day 12h truoc $0.000150678
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $273 / nen $1,382
    VE 4 ⬜ sach nang: ⛔ unknown url type: ''
-        khu hoi $250 = 1.59% (cua <=5.0%) · tong pool $45,859 · phi ~0.25%/chieu
-   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 0.67 · h24 1.41 · vi mua/ban 0.67
-   von hoa $204,060 · cap WBTC · vol24 $41,021 · tuoi 208h · nguon trending
+        khu hoi $250 = 1.65% (cua <=5.0%) · tong pool $43,505 · phi ~0.25%/chieu
+   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 4.17 · h24 1.48 · vi mua/ban 3.40
+   von hoa $174,476 · cap WBTC · vol24 $39,944 · tuoi 211h · nguon trending
 
-da ghi 12 dong anh chup + 6 dong ro doi chung vao DO-DEM.md
+da ghi 12 dong anh chup + 8 dong ro doi chung vao DO-DEM.md
 danh sach theo doi (qua 1-2-3-4): 0
 ung vien (du ca 5 ve): 0
 KHONG CO UNG VIEN MOI
-[29 cu · 210 giay]
+[28 cu · 191 giay]
