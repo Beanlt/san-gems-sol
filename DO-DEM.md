@@ -1086,3 +1086,18 @@
 | DC 2026-09-19 22:32 | Prism | `5zNmPYCm724a7HLE8FXB2d6R3BbsuPSjzNAxBmkHpump` | 70 | $47,640 | $242,249 | 0.0002422498845 | — | 0 nen | — | ..... | — | 24 | trending |
 | DC 2026-09-19 22:32 | BABYCATE | `4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws` | 236 | $78,736 | $636,583 | 0.0006365833529 | — | 0 nen | — | ..... | — | 11 | trending |
 | DC 2026-09-19 22:32 | Stryker | `G9QZfEPHtZrUF1arcUFvZgYn6zSQLZdvcjCuyhKrpump` | 1646 | $91,844 | $934,607 | 0.0009425671549 | — | 0 nen | — | ..... | — | 10 | trending |
+| 2026-09-20 00:27 | PEPARK | `6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump` | 9 | $64,406 | $129,855 | 0.0001471458337 | 98.2% | 0/24 | 0.1x | --3.. | 0.82 | 1127 | trending |
+| 2026-09-20 00:27 | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 122 | $149,562 | $1,421,039 | 0.0014365693 | 44.4% | 0/24 | 0.2x | --3.. | 0.70 | 57 | trending |
+| 2026-09-20 00:27 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 176 | $96,757 | $978,786 | 0.0009861511628 | 56.4% | 6/24 | 0.7x | ---.. | 1.74 | 60 | trending |
+| 2026-09-20 00:27 | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 244 | $134,283 | $1,473,728 | 0.001473772749 | 78.3% | 0/24 | 0.2x | --3.. | 1.88 | 326 | trending |
+| 2026-09-20 00:27 | biketyson | `CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump` | 82 | $161,538 | $1,442,592 | 0.001443226483 | 16.1% | 24/24 | 0.6x | 12-.. | 2.38 | 392 | trending |
+| 2026-09-20 00:27 | SOLCAT | `9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1` | 153 | $45,754 | $172,548 | 0.0001763482397 | 12.9% | 14/24 | 0.8x | 1--.. | 0.83 | 53 | trending |
+| 2026-09-20 00:27 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 59 | $95,647 | $133,328 | 0.000227996537 | 86.8% | 0/24 | 0.2x | --3.. | 2.44 | 216 | trending |
+| 2026-09-20 00:27 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 34 | $59,231 | $225,171 | 0.0002372981765 | 6.4% | 24/24 | 1.1x | 12-.. | 0.73 | 197 | trending |
+| 2026-09-20 00:27 | nub | `GtDZKAqvMZMnti46ZewMiXCa4oXF4bZxwQPoKzXPFxZn` | 13 | $233,274 | $215,200 | 0.0002152218937 | 3.0% | 24/24 | 0.1x | 12-.. | 2.88 | 21814 | trending |
+| 2026-09-20 00:27 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 3 | $134,128 | $873,940 | 0.0009890006812 | 44.8% | 0/24 | 0.3x | ---.. | 0.57 | 743 | trending |
+| 2026-09-20 00:27 | Nasduck | `7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze` | 19 | $101,467 | $489,962 | 0.0005157126413 | 8.0% | 24/24 | 0.4x | 123.. | 0.65 | 312 | trending |
+| 2026-09-20 00:27 | MCAT | `241aTYhVXZ4WBVSFpfY37RqoCGBQ73KiRFAKvTtnmoon` | 149 | $57,749 | $189,549 | 0.0001912308677 | 6.1% | 24/24 | 0.7x | 12-.. | 1.25 | 52 | trending |
+| DC 2026-09-20 00:27 | TIPPED | `tipp4C4Jnpft26HC9VXNjUPidojZqxXf8nzKvrKf5BS` | 964 | $100,816 | $887,860 | 0.0008882512561 | — | 0 nen | — | ..... | — | 7 | trending |
+| DC 2026-09-20 00:27 | BABYCATE | `4JHXtNwMogExmcxXB1Ykb1A9s6yyAWKYG7xRurnT14Ws` | 166 | $74,621 | $546,008 | 0.0005460083654 | — | 0 nen | — | ..... | — | 13 | trending |
+| DC 2026-09-20 00:27 | Stryker | `G9QZfEPHtZrUF1arcUFvZgYn6zSQLZdvcjCuyhKrpump` | 1451 | $88,307 | $856,683 | 0.0008617428234 | — | 0 nen | — | ..... | — | 12 | trending |
