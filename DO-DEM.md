@@ -1391,3 +1391,25 @@
 | DC 2026-09-21 19:47 | JEANJAK | `CDAC33JvozJ1UjxBMkvZgJcVXoxdH9iGxeBXUJdXpump` | 0 | $304,624 | $358,465 | 0.0003615568702 | — | 0 nen | — | ..... | — | 28 | trending |
 | DC 2026-09-21 19:47 | CLIP | `9DdHxVe1BSPaTy3iGEwvWsooRchNLK61XFAvzot59FwD` | 670 | $69,435 | $388,399 | 0.0003966760976 | — | 0 nen | — | ..... | — | 6 | trending |
 | DC 2026-09-21 19:47 | AVAX | `avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D` | 144 | $75,301 | $1,047,919 | 10.97361047 | — | 0 nen | — | ..... | — | 19 | trending |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-18 21:19 | 72h | 0.000191235237 | 0.0003890000811 | +103.4% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-20 22:45 | 24h | 0.0003067444358 | 0.0003890000811 | +26.8% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-18 21:19 | 72h | 0.001056773236 | 0.0009599142566 | -9.2% |
+| KQ | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 2026-09-20 22:45 | 24h | 0.0008504116462 | 0.001448229662 | +70.3% |
+| KQ | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 2026-09-20 22:45 | 24h | 0.001528149695 | 0.001312997149 | -14.1% |
+| KQ | biketyson | `CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump` | 2026-09-20 22:45 | 24h | 0.001217513555 | 0.001314522424 | +8.0% |
+| 2026-09-21 23:42 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 68 | $131,526 | $230,219 | 0.0003890000811 | 90.4% | 0/24 | 0.6x | --3.. | 2.18 | 263 | trending |
+| 2026-09-21 23:42 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 39 | $128,462 | $1,437,918 | 0.001448229662 | 72.1% | 0/24 | 0.5x | --3.. | 0.32 | 107 | trending |
+| 2026-09-21 23:42 | biketyson | `CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump` | 28 | $160,858 | $1,314,522 | 0.001314522424 | 14.8% | 24/24 | 0.3x | 12-.. | 1.61 | 439 | trending |
+| 2026-09-21 23:42 | PLOI | `ydDccyq66xKtfqn5bsRpfFXz4WeF4fh3bgQBx1npump` | 80 | $68,039 | $155,548 | 0.0001368948774 | 49.1% | 12/24 | 1.5x | --3.. | 1.94 | 7025 | trending |
+| 2026-09-21 23:42 | FLEX | `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | 33 | $90,611 | $665,587 | 0.0006931508359 | 12.8% | 24/24 | 0.4x | 12-.. | 0.40 | 69 | trending |
+| 2026-09-21 23:42 | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 122 | $149,218 | $1,277,611 | 0.001312997149 | 40.6% | 0/24 | 0.9x | --3.. | 1.11 | 104 | trending |
+| 2026-09-21 23:42 | UPTOBER | `6vVfbQVRSXcfyQamPqCzcqmA86vCzb2d7B7gmDDqpump` | 31 | $171,883 | $721,759 | 0.0007991056424 | 68.1% | 0/24 | 4.8x | --3.. | 3.45 | 17136 | trending |
+| 2026-09-21 23:42 | TIGRINO | `91ryaCo5yGpYZM3bs6GUPs97VWJQj7RozBmqPULgpump` | 140 | $67,185 | $290,540 | 0.000294382525 | 7.5% | 10/24 | 0.5x | 1--.. | 0.76 | 85 | trending |
+| 2026-09-21 23:42 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 14 | $136,030 | $848,238 | 0.0009599142566 | 43.9% | 0/24 | 0.8x | --3.. | 1.40 | 790 | trending |
+| DC 2026-09-21 23:42 | Stamp | `EKtmPPLaCbEEKiwoHHtV7TsRsmPXs5CMGtQtZFSiinsc` | 42 | $114,048 | $778,932 | 0.0007863732876 | — | 0 nen | — | ..... | — | 29 | trending |
+| DC 2026-09-21 23:42 | FAMILY | `FvMLDEUDKUr9C34e8Nynz5Aqfdk34a2RBKQxygLpfomo` | 160 | $42,805 | $174,736 | 0.0001736610753 | — | 0 nen | — | ..... | — | 11 | trending |
+| DC 2026-09-21 23:42 | CLIP | `9DdHxVe1BSPaTy3iGEwvWsooRchNLK61XFAvzot59FwD` | 688 | $99,453 | $768,103 | 0.0007830325017 | — | 0 nen | — | ..... | — | 10 | trending |
+| DC 2026-09-21 23:42 | JEANJAK | `CDAC33JvozJ1UjxBMkvZgJcVXoxdH9iGxeBXUJdXpump` | 0 | $321,538 | $358,465 | 0.0003615568702 | — | 0 nen | — | ..... | — | 32 | trending |
+| DC 2026-09-21 23:42 | AVAX | `avaxGHCq3T7hoxd73oY2KY9hJSTaeMibXvHy5KNzh5D` | 86 | $69,133 | $1,058,309 | 11.14919445 | — | 0 nen | — | ..... | — | 23 | trending |
+| DC 2026-09-21 23:42 | SI | `DEW9dSN6QpWyNthphCpMmAbZP1Q4cEKR9xQXAri98WDP` | 269 | $100,243 | $956,619 | 0.0009584941496 | — | 0 nen | — | ..... | — | 8 | trending |
+| DC 2026-09-21 23:42 | HUSKY | `HPiEvRe9H12rVPAmWN9m6tQCTsfoH6VBZ6AfTYa5seXR` | 181 | $54,952 | $62,835 | 6.347388898e-05 | — | 0 nen | — | ..... | — | 0 | moi |
