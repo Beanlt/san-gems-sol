@@ -1271,3 +1271,27 @@
 | DC 2026-09-20 22:45 | FLEX | `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | 105 | $95,327 | $831,762 | 0.0008660877544 | — | 0 nen | — | ..... | — | 44 | trending |
 | DC 2026-09-20 22:45 | Tokens | `C3b3fpyRWsJf3bo6vay2vo1bQ7CezwumZwTrP82Lpump` | 997 | $42,073 | $196,213 | 0.0001948421786 | — | 0 nen | — | ..... | — | 26 | trending |
 | DC 2026-09-20 22:45 | PEPE | `PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m` | 95 | $99,419 | $1,401,569 | 3.963673874e-06 | — | 0 nen | — | ..... | — | 40 | trending |
+| KQ | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 2026-09-20 00:27 | 24h | 0.0002372981765 | 0.0001893842504 | -20.2% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-20 00:27 | 24h | 0.000227996537 | 0.000324008133 | +42.1% |
+| KQ | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 2026-09-20 00:27 | 24h | 0.001473772749 | 0.001223172661 | -17.0% |
+| KQ | PEPARK | `6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump` | 2026-09-20 00:27 | 24h | 0.0001471458337 | 0.0001520597843 | +3.3% |
+| KQ | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 2026-09-20 00:27 | 24h | 0.0009861511628 | 0.0006826494021 | -30.8% |
+| KQ | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 2026-09-20 00:27 | 24h | 0.0014365693 | 0.001234544649 | -14.1% |
+| KQ | biketyson | `CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump` | 2026-09-20 00:27 | 24h | 0.001443226483 | 0.001294462728 | -10.3% |
+| 2026-09-21 00:33 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 103 | $116,264 | $191,713 | 0.000324008133 | 100.0% | 0/24 | 0.6x | --3.. | 2.35 | 240 | trending |
+| 2026-09-21 00:33 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 190 | $82,161 | $677,551 | 0.0006826494021 | 39.9% | 0/24 | 0.5x | ---.. | 1.86 | 84 | trending |
+| 2026-09-21 00:33 | PEPARK | `6x4G1SqbPTWkqmZ4VAWVgoZ1jmA7TqJUSHnKyqsHpump` | 8 | $65,703 | $134,191 | 0.0001520597843 | 100.0% | 0/24 | 0.2x | --3.. | 0.80 | 1151 | trending |
+| 2026-09-21 00:33 | Pepe | `B5WTLaRwaUQpKk7ir1wniNB6m5o8GgMrimhKMYan2R6B` | 30 | $376,961 | $1,373,257 | 0.001373257926 | 66.7% | 0/24 | 0.0x | ---.. | 1.04 | 20359 | trending |
+| 2026-09-21 00:33 | biketyson | `CbyTNf7UPzvewHh4Zp6umogM2RWahhmGRJWLJnPwpump` | 40 | $154,068 | $1,294,462 | 0.001294462728 | 14.5% | 24/24 | 0.6x | 12-.. | 1.00 | 416 | trending |
+| 2026-09-21 00:33 | SCRIBE | `6rHkNb7HCtkpvdnVJsBCZHH5dw3AndqEjfmbEGhooR7t` | 13 | $73,752 | $650,785 | 0.0006777100978 | 27.9% | 20/24 | 0.4x | -23.. | 0.52 | 135 | trending |
+| 2026-09-21 00:33 | ALL | `ASoQZA3Dee2HU34Vwx3b5SAtTaczJtZcyx1T413nDALL` | 17 | $53,345 | $180,146 | 0.0001893842504 | 5.2% | 24/24 | 1.0x | 123.. | 0.75 | 221 | trending |
+| 2026-09-21 00:33 | JUPCAT | `AaEhFTX4naHSWSXz9TVe5QgLbtSLT8ZqYJGZzDDcoroh` | 15 | $122,388 | $1,223,136 | 0.001223172661 | 62.2% | 0/24 | 0.7x | ---.. | 0.43 | 350 | trending |
+| 2026-09-21 00:33 | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 44 | $140,000 | $1,205,081 | 0.001234544649 | 37.8% | 0/24 | 0.3x | ---.. | 0.45 | 81 | trending |
+| 2026-09-21 00:33 | HUHCAT | `A9AHYeqb7nQk7LZUraw7rBCzYRjy2DRvE6NqWfFHKRdH` | 46 | $79,323 | $432,097 | 0.0004501545064 | 20.6% | 24/24 | 0.2x | 123.. | 1.51 | 142 | trending |
+| 2026-09-21 00:33 | PEPE | `PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m` | 161 | $80,875 | $1,432,138 | 4.050125301e-06 | 94.7% | 0/24 | 0.3x | ---.. | 1.05 | 50 | trending |
+| DC 2026-09-21 00:33 | TIPPED | `tipp4C4Jnpft26HC9VXNjUPidojZqxXf8nzKvrKf5BS` | 189 | $60,618 | $273,864 | 0.0002745121478 | — | 0 nen | — | ..... | — | 31 | trending |
+| DC 2026-09-21 00:33 | fomopay | `BP4Wic5LNKsqpmiREW6uNVEC16juvFCSd4WzVBatpump` | 177 | $68,070 | $384,019 | 0.0003853269714 | — | 0 nen | — | ..... | — | 27 | trending |
+| DC 2026-09-21 00:33 | ZEBRA | `EqFG72Z35r8cAV8mKu3UK2L8NUTR1ZNyMr88E4BnwN8Q` | 3282 | $106,921 | $1,064,256 | 0.001102994192 | — | 0 nen | — | ..... | — | 3 | trending |
+| DC 2026-09-21 00:33 | FLEX | `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | 100 | $101,971 | $921,378 | 0.0009594127198 | — | 0 nen | — | ..... | — | 46 | trending |
+| DC 2026-09-21 00:33 | PEPE | `PEPEqnuuCDbBC89p1u9vpnP1KQ2oj1xTcQBsjt9X55m` | 66 | $102,981 | $1,447,665 | 4.094034063e-06 | — | 0 nen | — | ..... | — | 42 | trending |
+| DC 2026-09-21 00:33 | Mercedes | `UKFj2WP4ruSBEoYNdaPPwGvHcbJ5pKkTkPnzHKTpump` | 111 | $46,256 | $294,013 | 0.0002941105463 | — | 0 nen | — | ..... | — | 0 | moi |
