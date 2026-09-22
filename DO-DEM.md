@@ -1468,3 +1468,29 @@
 | DC 2026-09-22 12:05 | KCAT | `MboMMGXjGDi45hfjCVzYru32kEM5nw7VzCqCofZpump` | 2782 | $78,597 | $713,039 | 0.0006977419879 | — | 0 nen | — | ..... | — | 2 | trending |
 | DC 2026-09-22 12:05 | URA | `URARfsinxCRw4JpvQhuT4CxavdZXZEMjv9ZwWmWpwag` | 4 | $225,446 | $1,397,289 | 41.95285585 | — | 0 nen | — | ..... | — | 21 | trending |
 | DC 2026-09-22 12:05 | Betrob | `GJzgKWpwui4X8gvyhhfTRtKuD9T2r3Kfs15HUfFVBAGS` | 58 | $111,577 | $61,976 | 0.03314206578 | — | 0 nen | — | ..... | — | 0 | moi |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-19 16:07 | 72h | 0.00025988612 | 0.0003738691161 | +43.9% |
+| KQ | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 2026-09-21 13:24 | 24h | 0.0003853095765 | 0.0003738691161 | -3.0% |
+| KQ | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 2026-09-19 16:07 | 72h | 0.0009860258781 | 0.001082549259 | +9.8% |
+| KQ | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 2026-09-19 16:07 | 72h | 0.0005624931122 | 0.001436838718 | +155.4% |
+| KQ | ELON | `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` | 2026-09-19 16:07 | 72h | 0.001560689612 | 0.001312069288 | -15.9% |
+| KQ | ELON | `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` | 2026-09-21 13:24 | 24h | 0.001274633494 | 0.001312069288 | +2.9% |
+| KQ | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 2026-09-21 13:24 | 24h | 0.001250054422 | 0.001327498231 | +6.2% |
+| KQ | FLEX | `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | 2026-09-21 13:24 | 24h | 0.0007824625788 | 0.0007417329999 | -5.2% |
+| 2026-09-22 17:21 | CALI | `8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA` | 146 | $128,450 | $1,435,108 | 0.001436838718 | 71.5% | 0/24 | 0.5x | ---.. | 1.01 | 125 | trending |
+| 2026-09-22 17:21 | PEPENOM | `EpEfnZxQyiBXppSKi8sncc8w4corn1UJbF9G91fQpump` | 78 | $129,460 | $224,859 | 0.0003738691161 | 86.7% | 0/24 | 0.2x | --3.. | 2.11 | 280 | trending |
+| 2026-09-22 17:21 | Tilcayo | `AyYNfPtftg2zDP4ZbgcoQMggQtwLh4zpfVVmUJs2thto` | 168 | $149,031 | $1,284,944 | 0.001327498231 | 39.9% | 0/24 | 0.3x | --3.. | 1.42 | 122 | trending |
+| 2026-09-22 17:21 | PLOI | `ydDccyq66xKtfqn5bsRpfFXz4WeF4fh3bgQBx1npump` | 49 | $59,916 | $123,421 | 0.0001080464852 | 35.0% | 0/24 | 1.7x | ---.. | 2.52 | 7042 | trending |
+| 2026-09-22 17:21 | MADE | `EpXtn6xGoZ4Y45vRjiDUHSCGbBoJD5FaEqZbF98YswH1` | 9 | $145,875 | $956,605 | 0.001082549259 | 49.1% | 0/24 | 0.3x | --3.. | 0.71 | 808 | trending |
+| 2026-09-22 17:21 | FLEX | `fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump` | 22 | $93,607 | $712,042 | 0.0007417329999 | 13.4% | 24/24 | 0.5x | 123.. | 0.40 | 87 | trending |
+| 2026-09-22 17:21 | ELON | `GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump` | 50 | $154,668 | $1,217,707 | 0.001312069288 | 20.1% | 21/24 | 0.3x | 123.. | 0.55 | 166 | trending |
+| 2026-09-22 17:21 | SQUIRE | `EN2nnxrg8uUi6x2sJkzNPd2eT6rB9rdSoQNNaENA4RZA` | 112 | $178,944 | $1,412,432 | 0.001412690871 | 58.3% | 0/24 | 0.3x | ---.. | 2.53 | 4506 | trending |
+| 2026-09-22 17:21 | SAAR | `8H5yfL1GoDETLDaLYZzrgQuZs37eiKJjdfP21b6ypump` | 17 | $113,387 | $1,290,032 | 0.00135152283 | 49.7% | 0/24 | 0.8x | ---.. | 0.45 | 426 | trending |
+| 2026-09-22 17:21 | COPPERINU | `61Wj56QgGyyB966T7YsMzEAKRLcMvJpDbPzjkrCZc4Bi` | 3 | $86,403 | $182,790 | 0.0001828166149 | 11.1% | 24/24 | 1.5x | 123.. | 1.50 | 5736 | trending |
+| DC 2026-09-22 17:21 | CLIP | `9DdHxVe1BSPaTy3iGEwvWsooRchNLK61XFAvzot59FwD` | 216 | $84,141 | $523,729 | 0.0005730375768 | — | 0 nen | — | ..... | — | 27 | trending |
+| DC 2026-09-22 17:21 | CATEWALK | `BLSuVTxKYDL4vm4XmG3oEJfsSGfJZF3cgy98ri68pump` | 948 | $102,946 | $1,084,152 | 0.001104808857 | — | 0 nen | — | ..... | — | 14 | trending |
+| DC 2026-09-22 17:21 | LOOONGCAT | `5tYcEEKvN63RrzpomgF2jWMxJMHmr4Zo19RX1mXipump` | 1902 | $81,760 | $674,716 | 0.0006887892708 | — | 0 nen | — | ..... | — | 20 | trending |
+| DC 2026-09-22 17:21 | Stamp | `EKtmPPLaCbEEKiwoHHtV7TsRsmPXs5CMGtQtZFSiinsc` | 49 | $110,177 | $685,089 | 0.0006916394548 | — | 0 nen | — | ..... | — | 47 | trending |
+| DC 2026-09-22 17:21 | JOLLYBOT | `9Vkx8JzfdARs59TFJvJbHALjgxSzvttja3kdCTb82HAX` | 37 | $40,307 | $170,261 | 0.0001799209456 | — | 0 nen | — | ..... | — | 18 | trending |
+| DC 2026-09-22 17:21 | RUNUP | `runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3` | 137 | $52,038 | $177,398 | 0.0001771665135 | — | 0 nen | — | ..... | — | 5 | trending |
+| DC 2026-09-22 17:21 | NEETBUX | `D1moL9vco9Zz4yuthM9ZxH2E19gKji779AVV959XEtXx` | 20 | $276,335 | $285,850 | 0.0002859860005 | — | 0 nen | — | ..... | — | 0 | moi |
+| DC 2026-09-22 17:21 | SEPTIM | `gbm8MiC25KGpnGE56vreDgVsAGp7jkUxvEZozxhKag8` | 20 | $244,786 | $257,206 | 0.0002622103369 | — | 0 nen | — | ..... | — | 0 | moi |
