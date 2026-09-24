@@ -1,4 +1,4 @@
-PHIEU · MAY SOLANA · 2026-09-24 07:49 UTC
+PHIEU · MAY SOLANA · 2026-09-24 13:47 UTC
 NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu chay)
    LOC THO : mc $50,000-$1,500,000 · tong pool >= $40,000 · tuoi >= 48h
    VE 1 da rot nat : gia <= 25% dinh (dinh = CLOSE nen 1h, KHONG lay rau)
@@ -12,15 +12,24 @@ NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu cha
    KHONG CO MOC BAN. Qua 1-2-3-4 = DANH SACH THEO DOI, chua phai ung vien.
    ⬜ MOI NGUONG TREN BE TU MAY ROBINHOOD, CHUA CA NAO DO TREN SOLANA.
 
-feed: 120 pool doc duoc · 1 trang loi
-   ⛔ moi trang 1: HTTP 429
-cham ket qua anh cu (moc 6/24/72 gio): 22 dong moi
-qua loc tho: 15 · pool qua non (<48h tuoi): 10
-doc duoc nen: 15 · loi goi: 0
-qua VE 1+2+3 (hinh dang gia): 0
+feed: 138 pool doc duoc · 0 trang loi
+cham ket qua anh cu (moc 6/24/72 gio): 9 dong moi
+qua loc tho: 17 · pool qua non (<48h tuoi): 7
+doc duoc nen: 17 · loi goi: 0
+qua VE 1+2+3 (hinh dang gia): 1
 
-da ghi 15 dong anh chup + 10 dong ro doi chung vao DO-DEM.md
+FLEX  fvHLJUwsynVHJrssbZ8MLNyku9jt2izUspbBD4Spump
+   VE 1 ✅ da rot nat : gia $0.00051891 = 9.6% dinh  (cua <=25%) · 115h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001356395 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000434846 / day 12h truoc $0.000316765
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.3x nen · $3,839 / nen $11,666
+   VE 4 ⬜ sach nang: ⛔ unknown url type: ''
+        khu hoi $250 = 1.13% (cua <=5.0%) · tong pool $79,233 · phi ~0.25%/chieu
+   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 0.24 · h24 0.72 · vi mua/ban 0.77
+   von hoa $498,608 · cap SOL · vol24 $358,147 · tuoi 132h · nguon trending
+
+da ghi 17 dong anh chup + 7 dong ro doi chung vao DO-DEM.md
 danh sach theo doi (qua 1-2-3-4): 0
 ung vien (du ca 5 ve): 0
 KHONG CO UNG VIEN MOI
-[32 cu · 235 giay]
+[36 cu · 269 giay]
