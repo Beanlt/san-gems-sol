@@ -23,6 +23,9 @@ jobs:
                                     #     Repo public: phut Actions khong tinh tien.
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main          # v3.2: luot XEP HANG phai lay so MOI NHAT. Mac dinh checkout lay commit
+                             #       luc KICH (luot 17:02 26/09 lay so cu -> hai luot dung nhau, so dinh dau xung dot)
 
       - uses: actions/setup-python@v5
         with:
@@ -38,11 +41,16 @@ jobs:
         run: |
           git config user.name  "san-gems-sol bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull --rebase --autostash origin main || true
+          # v3.2: COMMIT TRUOC, KEO SAU, KHONG --autostash. Ban cu keo voi --autostash truoc khi commit:
+          #       xung dot thi git de nguyen dau <<<<<<< trong so roi 'git add -A' day luon len (ca 26/09).
           git add -A
           if git diff --staged --quiet; then
             echo "khong co gi moi"
             exit 0
+          fi
+          if grep -l '^<<<<<<< \|^>>>>>>> ' DO-DEM.md MOI-NHAT.md phieu.txt 2>/dev/null; then
+            echo "🔴 CO DAU XUNG DOT GIT TRONG FILE — KHONG DAY"
+            exit 1
           fi
           git commit -m "quet sol $(date -u +%Y-%m-%dT%H:%M:%SZ)"
           # 🔴 THU LAI BA LAN — ca that 13/09 tren may Robinhood: GitHub tra
@@ -54,7 +62,19 @@ jobs:
             fi
             echo "day hong lan $i — cho 20 giay roi keo ve va thu lai"
             sleep 20
-            git pull --rebase --autostash origin main || true
+            # v3.2: DO-DEM.md gop kieu 'union' (.gitattributes) -> hai luot cung them dong thi giu CA HAI.
+            #       MOI-NHAT.md / phieu.txt xung dot thi lay ban CUA LUOT NAY (moi nhat).
+            #       Con xung dot o file khac -> dung han, khong day (khong bao gio day dau <<<<<<<).
+            if ! git pull --rebase origin main; then
+              for f in MOI-NHAT.md phieu.txt; do git checkout --theirs -- "$f" 2>/dev/null && git add "$f"; done
+              if git diff --name-only --diff-filter=U | grep -q .; then
+                git rebase --abort; echo "🔴 XUNG DOT LA KHI KEO VE — dung, khong day"; exit 1
+              fi
+              GIT_EDITOR=true git rebase --continue || { git rebase --abort; echo "🔴 REBASE HONG — dung"; exit 1; }
+            fi
+            if grep -l '^<<<<<<< \|^>>>>>>> ' DO-DEM.md MOI-NHAT.md phieu.txt 2>/dev/null; then
+              echo "🔴 CO DAU XUNG DOT SAU KHI KEO — KHONG DAY"; exit 1
+            fi
           done
           echo "🔴 DAY HONG CA BA LAN — phieu luot nay khong len duoc repo"
           exit 1
