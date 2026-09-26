@@ -470,12 +470,21 @@ def rugcheck(mint, kho=None):
     #    Nhan pool bang BA dau, du mot dau la bo: owner trung pubkey mot market · address trung
     #    tai khoan thanh khoan cua market · knownAccounts gan loai AMM.
     mk = j.get("markets") or []
-    pool_owner = {m.get("pubkey") for m in mk if m.get("pubkey")}
-    pool_acc = set()
+    # 🔴 v3.1 26/09: ban RugCheck DAY DU (goi thang tu GitHub) de liquidityA/B la KHOI (dict), ban gon
+    #    (Chrome) de la CHUOI. v3 chi nhan chuoi -> luot dau tren GitHub chet 'unhashable type: dict'.
+    #    Nay nhan ca hai: chuoi thi lay nguyen, khoi thi lay address/pubkey/owner ben trong.
+    def _dia(v):
+        if isinstance(v, str):
+            return {v}
+        if isinstance(v, dict):
+            return {v[k] for k in ("address", "pubkey", "owner") if isinstance(v.get(k), str)}
+        return set()
+    pool_owner, pool_acc = set(), set()
     for m in mk:
+        pool_owner |= _dia(m.get("pubkey"))
         for k in ("liquidityAAccount", "liquidityBAccount", "liquidityA", "liquidityB"):
-            if m.get(k):
-                pool_acc.add(m[k])
+            pool_acc |= _dia(m.get(k))
+    pool_owner |= pool_acc          # chu cua tai khoan thanh khoan cung la pool
     ka = j.get("knownAccounts") or {}
     def la_pool(h):
         o, a = h.get("owner"), h.get("address")
@@ -513,7 +522,7 @@ def rugcheck(mint, kho=None):
             "lp_khoa": lp,
             "nguoi_giu": j.get("totalHolders"),
             "diem": j.get("score_normalised", j.get("score")),
-            "canh_bao": [r.get("name") for r in (j.get("risks") or [])],
+            "canh_bao": [str(r.get("name")) for r in (j.get("risks") or []) if isinstance(r, dict)],
             "trong_cuoc": sum(1 for h in th if h.get("insider")),
             "gop_owner": gop_nhieu,
             "duc_rc": tk.get("mintAuthority"),
@@ -875,63 +884,74 @@ def pha_b():
         "/".join(str(x) for x in KQ_MOC), n_kq))
     cands = [c for c in doc if c.get("ve1") and c.get("ve2") and c.get("ve3")]
     theo_doi, ung_vien, duoi_qua = [], [], []
-    for c in sorted(cands, key=lambda x: -(x.get("res") or 0)):
-        kh = khu_hoi(c["res"], c["phi"])
-        print("\n%s  %s  [%s]" % (c["ma"], c["base"],
-              "DAI SAN" if c.get("vung", "san") == "san" else "DUOI SAN — chi ghi so, KHONG san"))
-        in_ba_ve(c)
-        r = quyen_token(c["base"])
-        time.sleep(0.5)
-        rc = rugcheck(c["base"], kho)
-        if r.get("loi") and rc.get("loi"):
-            r = {"loi": "ca hai nguon hong: RPC %s · RugCheck %s" % (r["loi"], rc["loi"])}
-        elif r.get("loi"):
-            r = {"loi": None, "duc": rc.get("duc_rc"), "dong_bang": rc.get("dong_bang_rc"),
-                 "chi_rc": True}
-        if not r.get("loi"):
-            if not rc.get("loi"):
-                if not r.get("chi_rc"):
-                    a = bool(r.get("duc")), bool(r.get("dong_bang"))
-                    b = bool(rc.get("duc_rc")), bool(rc.get("dong_bang_rc"))
-                    if a != b:
-                        r["lech"] = ("RPC noi duc=%s dong_bang=%s · RugCheck noi duc=%s dong_bang=%s"
-                                     % (a[0], a[1], b[0], b[1]))
-                for k in ("vi_to", "top10", "lp_khoa", "nguoi_giu", "diem",
-                          "canh_bao", "trong_cuoc", "bo_pool", "gop_owner"):
-                    r[k] = rc.get(k)
-            else:
-                r["vi_to"] = None
-                r["ly_vi"] = rc["loi"]
-        c["cua"] = r
-        c["ve4"] = qua_ve4(c, kh)
-        print("   VE 4 %s sach nang: %s" % (
-            "✅" if c["ve4"] else ("⬜" if c["ve4"] is None else "🔴"), doc_cua4(c)))
-        print("        khu hoi $%d = %s (cua <=%.1f%%) · tong pool $%s · phi ~%.2f%%/chieu" % (
-            CO_LENH, ("%.2f%%" % kh) if kh else "?", KHU_HOI_MAX,
-            format(int(c["res"]), ","), c["phi"]))
-        tl, tlv, lpv, t24 = nhip_lenh(c)
-        print("   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 %s · h24 %s" % (
-            ("%.2f" % tl) if tl else "—", ("%.2f" % t24) if t24 else "—"))
-        print("   von hoa $%s · cap %s · vol24 $%s · tuoi %.0fh · nguon %s" % (
-            format(int(c["mc"]), ","), c["cap"], format(int(c["vol"]), ","),
-            c.get("tuoi", 0), c.get("nguon", "?")))
-        if c["ve4"] is True and c.get("vung", "san") == "duoi":
-            # 🔴 v2: vung duoi van cham ve 5 de GHI SO, nhung KHONG BAO GIO len danh sach/ung vien
-            ve_nam(c, anh_gan)
-            duoi_qua.append(c)
-            print("   ⇒ DUOI SAN qua 1-2-3-4%s — CHI GHI SO, KHONG phai lenh vao" % (
-                "-5" if c["ve5"] is True else ""))
-        elif c["ve4"] is True:
-            theo_doi.append(c)
-            print("   ⇒ DANH SACH THEO DOI")
-            ve_nam(c, anh_gan)
-            if c["ve5"] is True:
-                ung_vien.append(c)
-                print("   ⇒ UNG VIEN — du ca nam ve")
-                vung_vao(c)
-                print("   ⏰ GIO IN PHIEU: %s — vao tien muon hon thi DO LAI truoc" % gio)
-            else:
-                print("   ⇒ CHI THEO DOI, chua co su kien vao. KHONG phai lenh vao.")
+    try:
+        # 🔴 v3.1: loi o bat ky con nao KHONG duoc chan viec ghi so (luot 26/09 15:52 mat het anh chup).
+        for c in sorted(cands, key=lambda x: -(x.get("res") or 0)):
+            kh = khu_hoi(c["res"], c["phi"])
+            print("\n%s  %s  [%s]" % (c["ma"], c["base"],
+                  "DAI SAN" if c.get("vung", "san") == "san" else "DUOI SAN — chi ghi so, KHONG san"))
+            in_ba_ve(c)
+            r = quyen_token(c["base"])
+            time.sleep(0.5)
+            try:
+                rc = rugcheck(c["base"], kho)
+            except Exception as e:
+                # 🔴 v3.1: mot con loi khong duoc giet ca luot (luot 26/09 15:52 mat het anh chup vi vay).
+                #    Loi script = ⛔, ve 4 KHONG qua, di tiep.
+                rc = {"loi": "LOI SCRIPT khi doc RugCheck: %s" % str(e)[:80]}
+            if r.get("loi") and rc.get("loi"):
+                r = {"loi": "ca hai nguon hong: RPC %s · RugCheck %s" % (r["loi"], rc["loi"])}
+            elif r.get("loi"):
+                r = {"loi": None, "duc": rc.get("duc_rc"), "dong_bang": rc.get("dong_bang_rc"),
+                     "chi_rc": True}
+            if not r.get("loi"):
+                if not rc.get("loi"):
+                    if not r.get("chi_rc"):
+                        a = bool(r.get("duc")), bool(r.get("dong_bang"))
+                        b = bool(rc.get("duc_rc")), bool(rc.get("dong_bang_rc"))
+                        if a != b:
+                            r["lech"] = ("RPC noi duc=%s dong_bang=%s · RugCheck noi duc=%s dong_bang=%s"
+                                         % (a[0], a[1], b[0], b[1]))
+                    for k in ("vi_to", "top10", "lp_khoa", "nguoi_giu", "diem",
+                              "canh_bao", "trong_cuoc", "bo_pool", "gop_owner"):
+                        r[k] = rc.get(k)
+                else:
+                    r["vi_to"] = None
+                    r["ly_vi"] = rc["loi"]
+            c["cua"] = r
+            c["ve4"] = qua_ve4(c, kh)
+            print("   VE 4 %s sach nang: %s" % (
+                "✅" if c["ve4"] else ("⬜" if c["ve4"] is None else "🔴"), doc_cua4(c)))
+            print("        khu hoi $%d = %s (cua <=%.1f%%) · tong pool $%s · phi ~%.2f%%/chieu" % (
+                CO_LENH, ("%.2f%%" % kh) if kh else "?", KHU_HOI_MAX,
+                format(int(c["res"]), ","), c["phi"]))
+            tl, tlv, lpv, t24 = nhip_lenh(c)
+            print("   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 %s · h24 %s" % (
+                ("%.2f" % tl) if tl else "—", ("%.2f" % t24) if t24 else "—"))
+            print("   von hoa $%s · cap %s · vol24 $%s · tuoi %.0fh · nguon %s" % (
+                format(int(c["mc"]), ","), c["cap"], format(int(c["vol"]), ","),
+                c.get("tuoi", 0), c.get("nguon", "?")))
+            if c["ve4"] is True and c.get("vung", "san") == "duoi":
+                # 🔴 v2: vung duoi van cham ve 5 de GHI SO, nhung KHONG BAO GIO len danh sach/ung vien
+                ve_nam(c, anh_gan)
+                duoi_qua.append(c)
+                print("   ⇒ DUOI SAN qua 1-2-3-4%s — CHI GHI SO, KHONG phai lenh vao" % (
+                    "-5" if c["ve5"] is True else ""))
+            elif c["ve4"] is True:
+                theo_doi.append(c)
+                print("   ⇒ DANH SACH THEO DOI")
+                ve_nam(c, anh_gan)
+                if c["ve5"] is True:
+                    ung_vien.append(c)
+                    print("   ⇒ UNG VIEN — du ca nam ve")
+                    vung_vao(c)
+                    print("   ⏰ GIO IN PHIEU: %s — vao tien muon hon thi DO LAI truoc" % gio)
+                else:
+                    print("   ⇒ CHI THEO DOI, chua co su kien vao. KHONG phai lenh vao.")
+    except Exception as e:
+        import traceback
+        print("\n⛔ LOI SCRIPT o ve 4-5, dung danh gia cac con con lai: %s" % str(e)[:120])
+        print("".join(traceback.format_exc().splitlines(True)[-4:]))
     if GHI:
         print("\nda ghi %d dong anh chup + %d dong ro doi chung vao %s" % (
             ghi_anh(doc, doi_chung=non), len(non), SO_ANH))
