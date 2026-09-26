@@ -6,6 +6,8 @@ on:
   schedule:
     - cron: '47 */2 * * *'      # lech 30 phut so may Robinhood (phut 17)
   workflow_dispatch:
+  push:                         # v3: sua code thi chay thu ngay. Bot chi ghi so/phieu nen khong tu kich lai.
+    paths: ['SAN.py', 'chay.sh', '.github/workflows/san.yml']
 
 permissions:
   contents: write
@@ -17,7 +19,8 @@ concurrency:
 jobs:
   quet:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 60             # v3: so theo doi ~230 dia chi -> ~126 cu nen. Luot thu 26/09 mat 24 phut.
+                                    #     Repo public: phut Actions khong tinh tien.
     steps:
       - uses: actions/checkout@v4
 
