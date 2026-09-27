@@ -18,7 +18,20 @@
 # VE 2  da nam li  : >=GIO_CUA trong GIO_NAM gio gan nhat co close <= nguong do
 # VE 3  het tao day: day nua sau >= day nua truoc
 # VE 4  sach nang  : quyen duc · quyen dong bang · phan bo vi · khu hoi     (TON CU)
-# VE 5  co nguoi vao: VI MUA rieng biet gio nay so voi nhip 6 gio           (0 cu them)
+# VE 5  co nguoi vao: TIEN RONG > 0 · trung vi lenh MUA > lenh BAN · thuoc 2 >= 0,8  (1 cu/con)
+#
+# 🆕 v4 · 27/09 (Bean chot): VE 5 BO DEM VI MUA, CHUYEN SANG DONG TIEN BANG DO.
+#   Ly do (do 27/09 tren 220 con): UPTOBER 13.319 vi mua / 3.037 vi ban trong 24h nhung tien mua
+#   xap xi tien ban — toan lenh $8-14 do bot rai. Dem vi mua CHO QUA dung loai hang gia nay.
+#   Cua moi, van la DAU khong phai muc:
+#     A. tien mua - tien ban > 0   (300 lenh gan nhat, bo lenh < LENH_BUI)
+#     B. trung vi lenh mua > trung vi lenh ban   (tay manh hung tay yeu)
+#     + thuoc 2 >= 0,8 giu nguyen (doi ung khong bi rut)
+#   Ba SO MO TA moi, CHI GHI SO, KHONG chan ai — cho bang KQ tra loi:
+#     C. vol4/nen · bien4/nen  (khoi luong 4h len ma bien do khong mo = lo xo nen)
+#     E. nguoi giu (RugCheck) — luot sau so luot truoc
+#     D. vi tao % — YEU TO NHE. Bean chot 27/09: up bo KHONG tranh duoc bang tim hieu
+#        (ho chia nhieu vi), nen KHONG BAO GIO lam cua.
 #
 # 🔴 VE 4 VA VE 5 KHAC MAY ROBINHOOD — do la CHO DUY NHAT duoc khac (LUAT.md muc 2.4, 2.5):
 #   ve 4: Solana khong co locker PonsV2 va khong dung GoPlus. Thay bang quyen duc / quyen
@@ -111,6 +124,8 @@ PHI_MAC_DINH = 0.25 # % moi chieu. Solana phi pool thay doi theo cho, GT it khi 
 # 🔴 CUA LA DAU, KHONG PHAI MUC. Giong may Robinhood (LUAT.md muc 2.5).
 VE5_CACH_MIN = 1.0
 VE5_CACH_MAX = 24.0
+LENH_BUI     = 10.0   # v4: bo lenh < $10 khi dem dong tien (bot rai lenh bui). ⬜ chua quet: 5 / 10 / 20
+NEN_4H_SO    = 42     # v4, so mo ta C: so khoi 4h lam nen (~7 ngay). Chi ghi so.
 KQ_MOC       = (6, 24, 72)
 KQ_LECH      = 0.35
 
@@ -131,9 +146,10 @@ def in_nguong():
     print("   VE 4 sach nang  : quyen duc THU HOI · quyen dong bang THU HOI · LP khoa >=%.0f%% ·" % LP_KHOA_MIN)
     print("                     vi to nhat <=%.0f%% · top10 <=%.0f%% · khu hoi <=%.1f%% (lenh $%d)" % (
         VI_TO_MAX, TOP10_MAX, KHU_HOI_MAX, CO_LENH))
-    print("   VE 5 co nguoi vao: vi MUA gio nay > nhip 6 gio, so anh chup cach %.0f-%.0f gio" % (
-        VE5_CACH_MIN, VE5_CACH_MAX))
-    print("      🔑 cua ve 5 la DAU, khong phai muc. Toc do %/gio chi de ghi so.")
+    print("   VE 5 co nguoi vao: TIEN RONG > 0 · trung vi lenh MUA > lenh BAN (300 lenh, bo lenh < $%.0f)" % LENH_BUI)
+    print("                      · thuoc 2 >= 0,8 so anh chup cach %.0f-%.0f gio" % (VE5_CACH_MIN, VE5_CACH_MAX))
+    print("      🔑 cua ve 5 la DAU, khong phai muc. v4 27/09: BO dem vi mua (bot rai lenh bui lam gia duoc).")
+    print("   SO MO TA CHI GHI SO (v4): vol4/nen · bien4/nen · nguoi giu · vi tao % — KHONG chan ai")
     print("   PHAN BO VI + LP KHOA: lay tu RugCheck (mien phi, khong khoa) · DA BO POOL khoi phan bo vi")
     print("   SO THEO DOI: moi dia chi tung vao %s duoc doc lai moi luot, khong can con trending" % SO_ANH)
     print("   VUNG DUOI SAN: von hoa $%s-$%s hoac doi ung < $%s -> chay du nam ve, CHI GHI SO, KHONG san" % (
@@ -361,6 +377,19 @@ def ba_ve(c):
     c["vol_nen"] = st.median(nen_vol) if nen_vol else 0
     c["vol_1h"] = volk[-1]
     c["vol_lan"] = (volk[-1] / c["vol_nen"]) if c["vol_nen"] > 0 else None
+    # 🆕 v4 SO MO TA C — CHI GHI SO. Khoi luong 4h gan nhat va bien do 4h, so voi trung vi cac khoi
+    #    4h truoc do (toi da NEN_4H_SO khoi). Bien do = (cao nhat - thap nhat) / thap nhat, co rau nen.
+    cao = [float(x[2]) for x in n]
+    thap = [float(x[3]) for x in n]
+    def _k4(i):
+        lo = min(thap[i:i+4])
+        return sum(volk[i:i+4]), ((max(cao[i:i+4]) - lo) / lo if lo > 0 else None)
+    v4, b4 = _k4(len(n) - 4)
+    truoc4 = [_k4(i) for i in range(len(n) - 8, max(-1, len(n) - 8 - 4*NEN_4H_SO), -4)]
+    nv = [x[0] for x in truoc4 if x[0] > 0]
+    nb = [x[1] for x in truoc4 if x[1]]
+    c["vol4_lan"] = (v4 / st.median(nv)) if nv and st.median(nv) > 0 else None
+    c["bien4_lan"] = (b4 / st.median(nb)) if (b4 is not None and nb and st.median(nb) > 0) else None
     return c["ve1"] and c["ve2"] and c["ve3"]
 
 
@@ -377,6 +406,9 @@ def in_ba_ve(c):
     print("   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = %s nen · $%s / nen $%s" % (
         ("%.1fx" % c["vol_lan"]) if c.get("vol_lan") else "?",
         format(int(c.get("vol_1h") or 0), ","), format(int(c.get("vol_nen") or 0), ",")))
+    print("   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = %s nen · bien do 4h = %s nen" % (
+        ("%.2fx" % c["vol4_lan"]) if c.get("vol4_lan") else "?",
+        ("%.2fx" % c["bien4_lan"]) if c.get("bien4_lan") else "?"))
 
 
 def nhip_lenh(c):
@@ -526,7 +558,11 @@ def rugcheck(mint, kho=None):
             "trong_cuoc": sum(1 for h in th if h.get("insider")),
             "gop_owner": gop_nhieu,
             "duc_rc": tk.get("mintAuthority"),
-            "dong_bang_rc": tk.get("freezeAuthority")}
+            "dong_bang_rc": tk.get("freezeAuthority"),
+            # 🆕 v4 SO MO TA D — YEU TO NHE, CHI GHI SO. ⬜ ten truong creatorBalance/supply CHUA KIEM
+            #    (27/09 RugCheck tra 'unable to generate report'); thieu truong thi ghi '—', khong doan.
+            "vi_tao": ((so(j.get("creatorBalance")) / so(tk.get("supply")) * 100)
+                       if (so(j.get("creatorBalance")) is not None and so(tk.get("supply"))) else None)}
 
 
 def doc_cua4(c):
@@ -623,23 +659,48 @@ def _ma_ve(c):
     return ra
 
 
+TIEU_DE_V4 = ("| gio UTC | ma | dia chi | vi mua h1 | doi ung | von hoa | gia | gia/dinh |"
+              " gio duoi | vol 1h/nen | nam ve | mua/ban h1 | tuoi h | nguon |"
+              " rong/pool | tv mua/ban | vol4/nen | bien4/nen | nguoi giu | vi tao |\n")
+
+
+def _o_v4(c):
+    """🆕 v4: 6 cot moi o CUOI dong (doc_anh_cu chi doc 14 cot dau -> dong cu va moi deu doc duoc).
+    '—' = chua do (con chua qua ve 4, hoac goi hong). CHI GHI SO."""
+    dt = c.get("dt") or {}
+    r = c.get("cua") or {}
+    co = dt and not dt.get("loi")
+    return " %s | %s | %s | %s | %s | %s |" % (
+        ("%+.2f%%" % (dt["rong"] / c["res"] * 100)) if (co and c.get("res")) else "—",
+        ("%.0f/%.0f" % (dt["tv_mua"], dt["tv_ban"])) if co else "—",
+        ("%.2fx" % c["vol4_lan"]) if c.get("vol4_lan") else "—",
+        ("%.2fx" % c["bien4_lan"]) if c.get("bien4_lan") else "—",
+        str(int(r["nguoi_giu"])) if r.get("nguoi_giu") else "—",
+        ("%.2f%%" % r["vi_tao"]) if r.get("vi_tao") is not None else "—")
+
+
 def ghi_anh(rows, path=SO_ANH, doi_chung=()):
     moi = not os.path.exists(path)
+    co_v4 = (not moi) and ("| rong/pool |" in open(path, encoding="utf-8").read())
     g = time.strftime("%Y-%m-%d %H:%M", time.gmtime())
     with open(path, "a", encoding="utf-8") as f:
+        if not moi and not co_v4:
+            # 🆕 v4: tieu de moi MOT LAN, bang moi tu day. Dong cu giu nguyen, cam sua tay.
+            f.write("\n> v4 27/09: tu day moi dong anh chup co them 6 cot o cuoi (ve 5 doi sang dong tien).\n\n")
+            f.write(TIEU_DE_V4)
+            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
         if moi:
             f.write("# SO ANH CHUP — MAY SOLANA. Script tu ghi moi luot. CAM sua tay.\n\n")
             f.write("> Luot sau doc anh cu -> biet VI MUA tang hay giam, DOI UNG tang hay giam.\n")
             f.write("> Cot 'nam ve': 5 ky tu, '-' la truot, '.' la chua chay toi ve do.\n")
             f.write("> Dong '| DC ' la RO DOI CHUNG (pool qua non, chi chup, khong san).\n")
             f.write("> Dong '| KQ ' la BANG KET QUA 6/24/72 gio.\n\n")
-            f.write("| gio UTC | ma | dia chi | vi mua h1 | doi ung | von hoa | gia | gia/dinh |"
-                    " gio duoi | vol 1h/nen | nam ve | mua/ban h1 | tuoi h | nguon |\n")
-            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
+            f.write(TIEU_DE_V4)
+            f.write("|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|\n")
         for c in rows:
             tl, tlv, lpv, _ = nhip_lenh(c)
             h1 = (c.get("tx") or {}).get("h1") or {}
-            f.write("| %s | %s | `%s` | %s | %s | $%s | %s | %.1f%% | %d/%d | %s | %s | %s | %.0f | %s |\n" % (
+            f.write("| %s | %s | `%s` | %s | %s | $%s | %s | %.1f%% | %d/%d | %s | %s | %s | %.0f | %s |%s\n" % (
                 g, c["ma"], c["base"],
                 h1.get("buyers") if h1.get("buyers") is not None else "—",
                 ("$" + format(int(c["res"]), ",")) if c.get("res") else "—",
@@ -649,7 +710,7 @@ def ghi_anh(rows, path=SO_ANH, doi_chung=()):
                 ("%.1fx" % c["vol_lan"]) if c.get("vol_lan") else "—",
                 _ma_ve(c),
                 ("%.2f" % tl) if tl is not None else "—",
-                c.get("tuoi", 0), "%s/%s" % (c.get("nguon", "?"), c.get("vung", "san"))))
+                c.get("tuoi", 0), "%s/%s" % (c.get("nguon", "?"), c.get("vung", "san")), _o_v4(c)))
         for c in doi_chung:
             f.write("| DC %s | %s | `%s` | %s | %s | $%s | %s | — | %s nen | — | ..... | — | %.0f | %s |\n" % (
                 g, c["ma"], c["base"],
@@ -661,13 +722,42 @@ def ghi_anh(rows, path=SO_ANH, doi_chung=()):
     return len(rows)
 
 
+def dong_tien(c):
+    """🆕 v4 27/09 — DONG TIEN BANG DO, cho ve 5. MOT cu goi.
+    300 lenh gan nhat cua pool, bo lenh < LENH_BUI. Tra {loi} neu goi hong (KHAC ket qua rong,
+    KYLUAT.md 16.7). Pool khong co lenh nao >= LENH_BUI -> ket qua that: tien rong 0, khong ai vao."""
+    ok, j, ly = get_lai("%s/pools/%s/trades?trade_volume_in_usd_greater_than=%g" % (GT, c["pool"], LENH_BUI))
+    time.sleep(GIAN_NOW[0])
+    if not ok:
+        return {"loi": "LOI GOI trades: " + ly}
+    tr = [x.get("attributes") or {} for x in (j.get("data") or [])]
+    mua = [so(x.get("volume_in_usd")) or 0 for x in tr if x.get("kind") == "buy"]
+    ban = [so(x.get("volume_in_usd")) or 0 for x in tr if x.get("kind") == "sell"]
+    gio = [calendar.timegm(time.strptime(x["block_timestamp"][:19], "%Y-%m-%dT%H:%M:%S"))
+           for x in tr if x.get("block_timestamp")]
+    return {"loi": None, "so_lenh": len(tr),
+            "phut": ((max(gio) - min(gio)) / 60) if len(gio) > 1 else 0,
+            "mua": sum(mua), "ban": sum(ban), "rong": sum(mua) - sum(ban),
+            "vi_mua": len({x.get("tx_from_address") for x in tr if x.get("kind") == "buy"}),
+            "vi_ban": len({x.get("tx_from_address") for x in tr if x.get("kind") == "sell"}),
+            "tv_mua": st.median(mua) if mua else 0, "tv_ban": st.median(ban) if ban else 0}
+
+
 def ve_nam(c, gan):
-    """VE 5 — CO NGUOI VAO. Dat khi VI MUA rieng biet tang va doi ung khong tut.
-    🔴 CUA LA DAU, KHONG PHAI MUC (LUAT.md 2.5). Toc do %/gio chi de ghi so.
-    🔴 Solana dem VI MUA chu khong dem VI GIU: so vi giu can khoa RPC, con vi mua
-       nam san trong feed. Ghi ro cho nay vi no KHAC may Robinhood."""
+    """VE 5 — CO NGUOI VAO. v4 27/09: DONG TIEN BANG DO, bo dem vi mua.
+    Dat khi: A tien rong > 0 · B trung vi lenh mua > trung vi lenh ban · thuoc 2 >= 0,8.
+    🔴 CUA LA DAU, KHONG PHAI MUC (LUAT.md 2.5). Tien rong/pool %, so vi mua chi de ghi so.
+    🔴 Van KHAC may Robinhood (ben do dem VI GIU) -> CAM so ket qua ve 5 giua hai may."""
     c["ve5"] = None
     c["ve5_ly"] = ""
+    dt = c.get("dt") or {}
+    if dt.get("loi") is None and dt:
+        print("   DONG TIEN %d lenh >=$%.0f trong %.0f phut: mua $%s (%d vi) · ban $%s (%d vi) · RONG $%s = %+.1f%% pool" % (
+            dt["so_lenh"], LENH_BUI, dt["phut"], format(int(dt["mua"]), ","), dt["vi_mua"],
+            format(int(dt["ban"]), ","), dt["vi_ban"], format(int(dt["rong"]), ","),
+            dt["rong"] / c["res"] * 100 if c.get("res") else 0))
+        print("      trung vi lenh mua $%.0f · lenh ban $%.0f %s" % (dt["tv_mua"], dt["tv_ban"],
+              "✅ tay manh hung tay yeu" if dt["tv_mua"] > dt["tv_ban"] else "🔴 ben ban lenh to hon"))
     a = c.get("base")
     if a not in gan:
         c["ve5_ly"] = "CHUA CO ANH CU — luot dau cua con nay, ghi lai de lan sau so"
@@ -675,22 +765,16 @@ def ve_nam(c, gan):
         return
     anh = gan[a]
     cach = (time.time() - anh["gio"]) / 3600
-    h1 = (c.get("tx") or {}).get("h1") or {}
-    moi, cu = h1.get("buyers"), anh.get("vi_mua")
-    print("   VE 5 — co nguoi vao (so voi anh chup cach %.1f gio):" % cach)
+    print("   VE 5 — co nguoi vao (thuoc 2 so voi anh chup cach %.1f gio):" % cach)
     if not (VE5_CACH_MIN <= cach <= VE5_CACH_MAX):
         c["ve5_ly"] = "anh cu cach %.1f gio, ngoai dai %.0f-%.0fh -> KHONG cham" % (
             cach, VE5_CACH_MIN, VE5_CACH_MAX)
         print("      ⬜ %s" % c["ve5_ly"])
         return
-    if not (cu and moi):
-        c["ve5_ly"] = "thieu so vi mua mot trong hai dau -> KHONG cham"
-        print("      ⬜ %s" % c["ve5_ly"])
-        return
-    d = (moi/cu - 1) * 100
-    toc = d / cach
-    print("      vi mua h1  %d -> %d  (%+.1f%% · %+.2f%%/gio) %s" % (
-        cu, moi, d, toc, "✅ co nguoi vao" if d > 0 else "🔴 nguoi ta dang bo di"))
+    h1 = (c.get("tx") or {}).get("h1") or {}
+    moi, cu = h1.get("buyers"), anh.get("vi_mua")
+    if cu and moi:
+        print("      (mo ta, KHONG con la cua) vi mua h1 %d -> %d (%+.1f%%)" % (cu, moi, (moi/cu - 1) * 100))
     t = None
     du_cu, du_moi = anh.get("doi_ung"), c.get("res")
     if du_cu and du_moi and anh.get("mc") and c.get("mc"):
@@ -705,8 +789,13 @@ def ve_nam(c, gan):
         c["ve5_ly"] = "khong chay duoc thuoc 2 -> KHONG cham"
         print("      ⬜ %s" % c["ve5_ly"])
         return
-    c["ve5"] = (d > 0) and (t >= 0.8)
-    c["ve5_ly"] = "vi mua %+.1f%% · thuoc 2 %.2f" % (d, t)
+    if not dt or dt.get("loi"):
+        c["ve5_ly"] = "⛔ dong tien: %s -> KHONG cham" % (dt.get("loi") or "chua goi")
+        print("      %s" % c["ve5_ly"])
+        return
+    c["ve5"] = (dt["rong"] > 0) and (dt["tv_mua"] > dt["tv_ban"]) and (t >= 0.8)
+    c["ve5_ly"] = "rong $%s · tv mua/ban $%.0f/$%.0f · thuoc 2 %.2f" % (
+        format(int(dt["rong"]), ","), dt["tv_mua"], dt["tv_ban"], t)
     print("      VE 5 %s  (%s)" % ("✅ DAT" if c["ve5"] else "🔴 TRUOT", c["ve5_ly"]))
 
 
@@ -913,7 +1002,7 @@ def pha_b():
                             r["lech"] = ("RPC noi duc=%s dong_bang=%s · RugCheck noi duc=%s dong_bang=%s"
                                          % (a[0], a[1], b[0], b[1]))
                     for k in ("vi_to", "top10", "lp_khoa", "nguoi_giu", "diem",
-                              "canh_bao", "trong_cuoc", "bo_pool", "gop_owner"):
+                              "canh_bao", "trong_cuoc", "bo_pool", "gop_owner", "vi_tao"):
                         r[k] = rc.get(k)
                 else:
                     r["vi_to"] = None
@@ -931,6 +1020,8 @@ def pha_b():
             print("   von hoa $%s · cap %s · vol24 $%s · tuoi %.0fh · nguon %s" % (
                 format(int(c["mc"]), ","), c["cap"], format(int(c["vol"]), ","),
                 c.get("tuoi", 0), c.get("nguon", "?")))
+            if c["ve4"] is True:
+                c["dt"] = dong_tien(c)      # 🆕 v4: 1 cu cho moi con qua ve 4 (ca vung duoi, de ghi so)
             if c["ve4"] is True and c.get("vung", "san") == "duoi":
                 # 🔴 v2: vung duoi van cham ve 5 de GHI SO, nhung KHONG BAO GIO len danh sach/ung vien
                 ve_nam(c, anh_gan)
