@@ -20,6 +20,13 @@
 # VE 4  sach nang  : quyen duc · quyen dong bang · phan bo vi · khu hoi     (TON CU)
 # VE 5  co nguoi vao: TIEN RONG > 0 · trung vi lenh MUA > lenh BAN · thuoc 2 >= 0,8  (1 cu/con)
 #
+# 🔴🔴 v4.1 · 27/09 (Bean chot sau ca JUPCAT): VE 4 SOI TOAN BO PHAN MO RONG TOKEN-2022.
+#   Ca that: JUPCAT in phieu UNG VIEN 18:09 UTC nhung la Token-2022 THUE 3% moi lan chuyen, QUYEN DOI THUE
+#   CON (5KXDF6...). Khu hoi that ~7,2% (vuot 5%), phieu ghi 1,16% vi code chi tinh phi pool.
+#   Nay (ham doc_mo_rong): chi DANH SACH TRANG moi duoc qua; thue chuyen CONG VAO khu hoi; quyen doi thue
+#   con, uy quyen vinh vien, hook chuyen, dong bang mac dinh, tam dung, khong chuyen duoc... = 🔴 TUYET DOI.
+#   Phan mo rong KHONG NHAN RA = 🔴. RPC hong = ⛔ (khong con lui ve RugCheck cho hai quyen nua).
+#
 # 🆕 v4 · 27/09 (Bean chot): VE 5 BO DEM VI MUA, CHUYEN SANG DONG TIEN BANG DO.
 #   Ly do (do 27/09 tren 220 con): UPTOBER 13.319 vi mua / 3.037 vi ban trong 24h nhung tien mua
 #   xap xi tien ban — toan lenh $8-14 do bot rai. Dem vi mua CHO QUA dung loai hang gia nay.
@@ -426,11 +433,51 @@ def nhip_lenh(c):
 
 
 # ---------- 3. VE 4 — SACH NANG ----------
-def khu_hoi(doi_ung, phi_mot_chieu):
-    """Giong may Robinhood: truot gia hai chieu + phi pool hai chieu."""
+def khu_hoi(doi_ung, phi_mot_chieu, thue_mot_chieu=0.0):
+    """Truot gia hai chieu + phi pool hai chieu + 🆕 v4.1 THUE TOKEN-2022 hai chieu (mua + ban)."""
     if not doi_ung:
         return None
-    return 2 * (CO_LENH / doi_ung) * 100 + 2 * phi_mot_chieu
+    return 2 * (CO_LENH / doi_ung) * 100 + 2 * phi_mot_chieu + 2 * thue_mot_chieu
+
+
+# 🆕 v4.1 — PHAN MO RONG TOKEN-2022. DANH SACH TRANG: chi nhung cai nay duoc qua ma khong can xet them.
+MO_RONG_SACH = {"metadataPointer", "tokenMetadata", "groupPointer", "groupMemberPointer",
+                "tokenGroup", "tokenGroupMember", "immutableOwner", "mintCloseAuthority"}
+
+
+def doc_mo_rong(exts):
+    """Tra (thue_pct_mot_chieu, [ly do 🔴]). Rong = sach. KHONG NHAN RA = 🔴 (cam doan la sach).
+    transferFeeConfig: thue lay MUC CAO NHAT cua older/newer; quyen doi thue con = 🔴 (chu nang thue toi
+    muc khong ban duoc — cung ban chat quyen dong bang)."""
+    thue, xau = 0.0, []
+    for e in exts or []:
+        ten = e.get("extension")
+        st_ = e.get("state") or {}
+        if ten in MO_RONG_SACH:
+            continue
+        if ten == "transferFeeConfig":
+            bps = [so((st_.get(k) or {}).get("transferFeeBasisPoints")) or 0
+                   for k in ("olderTransferFee", "newerTransferFee")]
+            thue = max(bps) / 100.0
+            if st_.get("transferFeeConfigAuthority"):
+                xau.append("QUYEN DOI THUE CON (%s) · thue %.2f%%/lan chuyen" % (
+                    st_["transferFeeConfigAuthority"], thue))
+            continue
+        if ten == "permanentDelegate":
+            if st_.get("delegate"):
+                xau.append("UY QUYEN VINH VIEN (%s) — lay duoc token trong moi vi" % st_["delegate"])
+            continue
+        if ten == "transferHook":
+            if st_.get("programId") or st_.get("authority"):
+                xau.append("HOOK CHUYEN (chuong trinh %s, quyen %s) — chan duoc lenh ban" % (
+                    st_.get("programId"), st_.get("authority")))
+            continue
+        if ten == "defaultAccountState":
+            if str(st_.get("accountState", "")).lower() != "initialized":
+                xau.append("TAI KHOAN MOI MAC DINH BI DONG BANG")
+            continue
+        xau.append("phan mo rong %s — KHONG trong danh sach trang, khong cho qua" % ten)
+    return thue, xau
 
 
 def quyen_token(mint):
@@ -444,11 +491,14 @@ def quyen_token(mint):
     info = (((r or {}).get("value") or {}).get("data") or {}).get("parsed", {}).get("info", {})
     if not info:
         return {"loi": "khong doc duoc du lieu mint"}
+    thue, xau = doc_mo_rong(info.get("extensions"))
     return {"loi": None,
             "duc": info.get("mintAuthority"),
             "dong_bang": info.get("freezeAuthority"),
             "cung": so(info.get("supply")),
-            "le": info.get("decimals")}
+            "le": info.get("decimals"),
+            "t22": ((r or {}).get("value") or {}).get("owner") == "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "thue": thue, "mo_rong_xau": xau}
 
 
 def doc_rc_file():
@@ -572,6 +622,11 @@ def doc_cua4(c):
     p = []
     p.append("quyen duc %s" % ("🔴 CON" if r.get("duc") else "✅ da thu hoi"))
     p.append("quyen dong bang %s" % ("🔴 CON" if r.get("dong_bang") else "✅ da thu hoi"))
+    if r.get("mo_rong_xau"):
+        p.append("🔴 TOKEN-2022: " + " | ".join(r["mo_rong_xau"]))
+    elif r.get("t22"):
+        p.append("Token-2022 ✅ mo rong sach%s" % ((" · THUE %.2f%%/lan chuyen (da cong vao khu hoi)" % r["thue"])
+                                                  if r.get("thue") else ""))
     if r.get("lech"):
         p.append("⛔ HAI NGUON NOI KHAC NHAU: " + r["lech"])
     if r.get("lp_khoa") is not None:
@@ -603,7 +658,9 @@ def qua_ve4(c, kh):
         return None
     if r.get("lech"):
         return None          # 🔴 hai nguon noi khac nhau -> KHONG ket luan
-    if r.get("duc") or r.get("dong_bang"):
+    if r.get("chi_rc"):
+        return None          # 🔴 v4.1: RPC hong -> khong doc duoc phan mo rong Token-2022 -> KHONG cho qua
+    if r.get("duc") or r.get("dong_bang") or r.get("mo_rong_xau"):
         return False
     if kh is None or kh > KHU_HOI_MAX:
         return False
@@ -855,7 +912,7 @@ def vung_vao(c):
     san = c["gia_nen"] * ((CO_LENH * 2 * 100 / ((KHU_HOI_MAX - 2*c["phi"]) * c["res"])) ** 0
                           ) if False else None
     # san phi: gia ma tai do khu hoi cham dung KHU_HOI_MAX, doi ung theo can bac hai cua gia
-    can = (2 * CO_LENH * 100) / max(KHU_HOI_MAX - 2 * c["phi"], 0.01)   # doi ung toi thieu
+    can = (2 * CO_LENH * 100) / max(KHU_HOI_MAX - 2 * c["phi"] - 2 * c.get("thue", 0), 0.01)   # doi ung toi thieu
     san = c["gia_nen"] * ((can / c["res"]) ** 2) if c.get("res") else None
     n = lambda x: ("$%.9f" % x).rstrip("0")
     print("   VUNG DUNG DUOC: %s -> %s" % (n(san) if san else "?", n(tran)))
@@ -868,7 +925,7 @@ def vung_vao(c):
         print("      🔴 gia nay %s CAO HON tran %.2f lan -> chua xep du, KHONG co gia vao" % (
             n(c["gia_nen"]), c["gia_nen"] / tran))
     else:
-        kh = khu_hoi(c["res"], c["phi"])
+        kh = khu_hoi(c["res"], c["phi"], c.get("thue", 0))
         print("      ✅ gia nay %s -> GIA DAT LENH: %s  (+%.3f%% truot chieu MUA)" % (
             n(c["gia_nen"]), n(c["gia_nen"] * (1 + kh/200)), kh/2))
 
@@ -976,7 +1033,6 @@ def pha_b():
     try:
         # 🔴 v3.1: loi o bat ky con nao KHONG duoc chan viec ghi so (luot 26/09 15:52 mat het anh chup).
         for c in sorted(cands, key=lambda x: -(x.get("res") or 0)):
-            kh = khu_hoi(c["res"], c["phi"])
             print("\n%s  %s  [%s]" % (c["ma"], c["base"],
                   "DAI SAN" if c.get("vung", "san") == "san" else "DUOI SAN — chi ghi so, KHONG san"))
             in_ba_ve(c)
@@ -1007,13 +1063,15 @@ def pha_b():
                 else:
                     r["vi_to"] = None
                     r["ly_vi"] = rc["loi"]
+            c["thue"] = r.get("thue") or 0.0
+            kh = khu_hoi(c["res"], c["phi"], c["thue"])      # 🆕 v4.1: khu hoi co THUE token
             c["cua"] = r
             c["ve4"] = qua_ve4(c, kh)
             print("   VE 4 %s sach nang: %s" % (
                 "✅" if c["ve4"] else ("⬜" if c["ve4"] is None else "🔴"), doc_cua4(c)))
-            print("        khu hoi $%d = %s (cua <=%.1f%%) · tong pool $%s · phi ~%.2f%%/chieu" % (
+            print("        khu hoi $%d = %s (cua <=%.1f%%) · tong pool $%s · phi ~%.2f%%/chieu · thue token %.2f%%/chieu" % (
                 CO_LENH, ("%.2f%%" % kh) if kh else "?", KHU_HOI_MAX,
-                format(int(c["res"]), ","), c["phi"]))
+                format(int(c["res"]), ","), c["phi"], c["thue"]))
             tl, tlv, lpv, t24 = nhip_lenh(c)
             print("   NHIP LENH (mo ta, KHONG phai cua chan): mua/ban h1 %s · h24 %s" % (
                 ("%.2f" % tl) if tl else "—", ("%.2f" % t24) if t24 else "—"))
