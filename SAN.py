@@ -65,8 +65,12 @@ CU = [0]
 # ---- DIEM NOI ----
 GT   = "https://api.geckoterminal.com/api/v2/networks/solana"
 DS   = "https://api.dexscreener.com/latest/dex"
-RPC  = os.environ.get("SOL_RPC", "https://api.mainnet-beta.solana.com")
+# 🔴🔴 v4.2 27/09: GitHub dua CHUOI RONG vao khi secret SOL_RPC bo trong -> ban cu lay RPC = '' ->
+#     MOI cu RPC hong ('unknown url type'), tu ngay dau. v4.1 bien loi do thanh ⛔ nen may het ra ung vien.
+#     Nay: rong thi lui ve RPC cong cong. Tai hien 27/09: SOL_RPC="" -> RPC = '' -> loi (DA KIEM).
+RPC  = os.environ.get("SOL_RPC") or "https://api.mainnet-beta.solana.com"
 RC   = "https://api.rugcheck.xyz/v1/tokens"
+RPC_DEM = [0, 0]        # v4.2: [so cu getAccountInfo doc duoc, tong so con] — in cuoi phieu
 
 # 🔑 KHONG CAN KHOA NAO CA. Bean chot 13/09 sau khi do:
 #    - RPC cong cong CHAN rieng getTokenLargestAccounts: tra thang
@@ -195,7 +199,7 @@ def get_lai(u):
     return ok, j, ly
 
 
-def rpc(method, params, timeout=25):
+def rpc_mot(method, params, timeout=25):
     CU[0] += 1
     try:
         d = json.dumps({"jsonrpc": "2.0", "id": 1, "method": method, "params": params}).encode()
@@ -210,6 +214,17 @@ def rpc(method, params, timeout=25):
         return False, None, "HTTP %d" % e.code
     except Exception as e:
         return False, None, str(e)[:80]
+
+
+def rpc(method, params, timeout=25):
+    """v4.2: hong thi goi lai HAI lan (nghi 2 roi 5 giay). Van hong -> tra loi, KHONG doan (KYLUAT.md 16.7)."""
+    ok, r, ly = rpc_mot(method, params, timeout)
+    for cho in (2, 5):
+        if ok:
+            break
+        time.sleep(cho)
+        ok, r, ly = rpc_mot(method, params, timeout)
+    return ok, r, ly
 
 
 def so(x):
@@ -622,6 +637,9 @@ def doc_cua4(c):
     p = []
     p.append("quyen duc %s" % ("🔴 CON" if r.get("duc") else "✅ da thu hoi"))
     p.append("quyen dong bang %s" % ("🔴 CON" if r.get("dong_bang") else "✅ da thu hoi"))
+    if r.get("chi_rc"):
+        # v4.2: truoc day loi RPC bi GIAU -> ve 4 hien ⬜ ma khong ai biet vi sao (ca 27/09 18:39)
+        p.append("⛔ RPC HONG (%s) — chua soi duoc Token-2022, KHONG cho qua" % r.get("ly_rpc"))
     if r.get("mo_rong_xau"):
         p.append("🔴 TOKEN-2022: " + " | ".join(r["mo_rong_xau"]))
     elif r.get("t22"):
@@ -1037,6 +1055,8 @@ def pha_b():
                   "DAI SAN" if c.get("vung", "san") == "san" else "DUOI SAN — chi ghi so, KHONG san"))
             in_ba_ve(c)
             r = quyen_token(c["base"])
+            RPC_DEM[1] += 1
+            RPC_DEM[0] += 0 if r.get("loi") else 1
             time.sleep(0.5)
             try:
                 rc = rugcheck(c["base"], kho)
@@ -1048,7 +1068,7 @@ def pha_b():
                 r = {"loi": "ca hai nguon hong: RPC %s · RugCheck %s" % (r["loi"], rc["loi"])}
             elif r.get("loi"):
                 r = {"loi": None, "duc": rc.get("duc_rc"), "dong_bang": rc.get("dong_bang_rc"),
-                     "chi_rc": True}
+                     "chi_rc": True, "ly_rpc": r["loi"]}     # v4.2: GIU ly do RPC hong de in ra phieu
             if not r.get("loi"):
                 if not rc.get("loi"):
                     if not r.get("chi_rc"):
@@ -1110,6 +1130,9 @@ def pha_b():
     print("danh sach theo doi (qua 1-2-3-4): %d" % len(theo_doi))
     print("ung vien (du ca 5 ve): %d" % len(ung_vien))
     print("duoi san qua 1-2-3-4 (chi ghi so): %d" % len(duoi_qua))
+    print("RPC GOI THANG: %d/%d con doc duoc quyen + Token-2022%s" % (
+        RPC_DEM[0], RPC_DEM[1], "" if RPC_DEM[0] == RPC_DEM[1] else
+        " · ⛔ con nao hong thi ve 4 ⬜ — do la LOI GOI, KHONG phai 'khong co ung vien'"))
     if not ung_vien:
         print("KHONG CO UNG VIEN MOI")
     print("[%d cu · %.0f giay]" % (CU[0], time.time()-T0))
