@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SAN GEMS SOLANA — MAY THU HAI, TU DONG tren repo Beanlt/san-gems-sol. Bean chot 26/09.
 #
-# 🔴🔴 v3 26/09: BO CHAY TAY. GitHub Actions chay moi 2 gio (thuc te GitHub gian con 4-6 luot/ngay).
+# 🔴🔴 v3 26/09: BO CHAY TAY. GitHub Actions chay MOI GIO tu v4.3 28/09 (GitHub van tu bo bot luot theo lich).
 #     Repo chay tu 13/09 bang ban cu (khong co RugCheck -> ve 4 luon ⬜); v3 thay ban do.
 #
 #     python3 SAN.py --tudong   -> PHA A · RugCheck GOI THANG · PHA B   (GitHub Actions chay cai nay)

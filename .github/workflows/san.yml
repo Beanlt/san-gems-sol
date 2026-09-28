@@ -4,7 +4,7 @@ name: san-gems-sol
 
 on:
   schedule:
-    - cron: '47 */2 * * *'      # lech 30 phut so may Robinhood (phut 17)
+    - cron: '13 * * * *'        # v4.3 28/09: moi gio. Lich 2 gio chi ra 3-4 luot/ngay (GitHub bo luot). Luot ~38 phut.
   workflow_dispatch:
   push:                         # v3: sua code thi chay thu ngay. Bot chi ghi so/phieu nen khong tu kich lai.
     paths: ['SAN.py', 'chay.sh', '.github/workflows/san.yml']
