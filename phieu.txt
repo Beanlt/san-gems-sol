@@ -1,0 +1,474 @@
+PHIEU · MAY SOLANA · PHA A · 2026-10-29 06:59 UTC
+NGUONG DANG CHAY · MAY SOLANA · NAM VE (Bean chot 13/09 — so ve = thu tu chay)
+   LOC THO : mc $50,000-$1,500,000 · tong pool >= $40,000 · tuoi >= 48h
+   VE 1 da rot nat : gia <= 25% dinh (dinh = CLOSE nen 1h, KHONG lay rau)
+   VE 2 da nam li  : >=20/24 gio gan nhat co close <= nguong tren
+   VE 3 het tao day: day 12 gio sau >= day 12 gio truoc
+   VE 4 sach nang  : quyen duc THU HOI · quyen dong bang THU HOI · LP khoa >=90% ·
+                     vi to nhat <=5% · top10 <=25% · khu hoi <=5.0% (lenh $250)
+   VE 5 co nguoi vao: TIEN RONG > 0 · trung vi lenh MUA > lenh BAN (300 lenh, bo lenh < $10)
+                      · thuoc 2 >= 0,8 so anh chup cach 1-24 gio
+      🔑 cua ve 5 la DAU, khong phai muc. v4 27/09: BO dem vi mua (bot rai lenh bui lam gia duoc).
+   SO MO TA CHI GHI SO (v4): vol4/nen · bien4/nen · nguoi giu · vi tao % — KHONG chan ai
+   PHAN BO VI + LP KHOA: lay tu RugCheck (mien phi, khong khoa) · DA BO POOL khoi phan bo vi
+   SO THEO DOI: moi dia chi tung vao DO-DEM.md duoc doc lai moi luot, khong can con trending
+   VUNG DUOI SAN: von hoa $20,000-$50,000 hoac doi ung < $40,000 -> chay du nam ve, CHI GHI SO, KHONG san
+   KHONG CO MOC BAN. Qua 1-2-3-4 = DANH SACH THEO DOI, chua phai ung vien.
+   ⬜ MOI NGUONG TREN BE TU MAY ROBINHOOD, CHUA CA NAO DO TREN SOLANA.
+
+feed: 125 pool doc duoc · 0 trang loi
+so theo doi: 621 dia chi trong so · nap them 506 pool khong con trending · 0 lo loi
+qua loc tho: 240 (dai san 115 · duoi san 125) · pool qua non (<48h tuoi): 7
+doc duoc nen: 238 · loi goi: 0
+qua VE 1+2+3 (hinh dang gia): 64
+
+e  CbcyNo7m1amFWqEQm2m4PLv1UNvpcL3C1Ujm6AkzpKoU  [DAI SAN · nguon trending]
+   VE 1 ✅ da rot nat : gia $0.000511341 = 2.3% dinh  (cua <=25%) · 793h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.005562653 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000503685 / day 12h truoc $0.000435996
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $1,252 / nen $8,453
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.53x nen · bien do 4h = 1.00x nen
+
+Holdoween  BxftAowY2dVa2h9KMqDTPk4oMxzU9k6uVbZuoorXpump  [DUOI SAN — chi ghi so · nguon trending]
+   VE 1 ✅ da rot nat : gia $0.00009969 = 4.8% dinh  (cua <=25%) · 803h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000522221 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00009606 / day 12h truoc $0.000087533
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.7x nen · $874 / nen $501
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.30x nen · bien do 4h = 0.87x nen
+
+VEIL  HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump  [DAI SAN · nguon trending]
+   VE 1 ✅ da rot nat : gia $0.001464798 = 9.2% dinh  (cua <=25%) · 368h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.003967342 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.0010923 / day 12h truoc $0.000896006
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.3x nen · $2,162 / nen $6,828
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 8.88x nen · bien do 4h = 6.20x nen
+
+Sí  1BYFCLiArGnZA6GHXro8WhGX4n1hWk2mwrxbnMY9emN  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000045203 = 7.1% dinh  (cua <=25%) · 488h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.00015972 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000044885 / day 12h truoc $0.000044639
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $4 / nen $161
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.72x nen · bien do 4h = 1.33x nen
+
+MCAT  241aTYhVXZ4WBVSFpfY37RqoCGBQ73KiRFAKvTtnmoon  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000022204 = 0.7% dinh  (cua <=25%) · 809h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000760172 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.0000219 / day 12h truoc $0.000020864
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.6x nen · $66 / nen $107
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.31x nen · bien do 4h = 0.89x nen
+
+CyberAxe  2Srf6mhufzWJKZ5nniVXgwamLmDJWXPQBmddJ1MMpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000086594 = 11.8% dinh  (cua <=25%) · 267h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000183993 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000080537 / day 12h truoc $0.00007793
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $57 / nen $2,531
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.18x nen · bien do 4h = 0.34x nen
+
+1  2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000314403 = 11.4% dinh  (cua <=25%) · 302h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000688142 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000298171 / day 12h truoc $0.000272279
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.4x nen · $1,370 / nen $3,056
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.94x nen · bien do 4h = 0.74x nen
+
+GIGACAT  2jcvq8QcJ8TzEYJKYMCjR61kXVSzib4mEkz89tQxpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000026692 = 4.5% dinh  (cua <=25%) · 825h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000148064 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000026526 / day 12h truoc $0.000025772
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $11
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 2.31x nen · bien do 4h = 2.29x nen
+
+mucron  3A3qjns31YZA6Ung91ZpoPD7J3p1bDFbTJ4ANFAPpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000053959 = 5.7% dinh  (cua <=25%) · 252h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000235785 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000049777 / day 12h truoc $0.000044444
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $97
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.94x nen · bien do 4h = 0.85x nen
+
+PARASITE  3kmygWKZBkCYrgZHKfiuB9UFKTcDLTFFsKo3BWpmpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000022657 = 0.6% dinh  (cua <=25%) · 692h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000980218 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00002146 / day 12h truoc $0.000020976
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $0 / nen $5
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.01x nen · bien do 4h = 0.51x nen
+
+Cadence  46doJPsSjEVMsNZm4b32UbbvbUXjFTM3TDPBWMM3pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000127367 = 14.9% dinh  (cua <=25%) · 524h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000213599 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000077865 / day 12h truoc $0.000072777
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 4.5x nen · $985 / nen $221
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 5.74x nen · bien do 4h = 6.62x nen
+
+MOS  4ChT49V1iazP2XUGtycGkEsS6pRMqvGfUbqvRC9Z91ZT  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000113482 = 8.6% dinh  (cua <=25%) · 777h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000330543 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000107973 / day 12h truoc $0.000106475
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.8x nen · $1 / nen $2
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 4.74x nen · bien do 4h = 5.30x nen
+
+fomo  4TC5nT1B7p3YpYUqiJcGSFjgLoASiH1Upxi1h1Jdpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000036346 = 10.8% dinh  (cua <=25%) · 815h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000083814 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000036346 / day 12h truoc $0.000034882
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 23.6x nen · $429 / nen $18
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.72x nen · bien do 4h = 2.29x nen
+
+BOP  527PdUTGwcFxVEMXt8tyRJA1nYbVedgSiSfh4s2LWTWz  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000070873 = 4.5% dinh  (cua <=25%) · 750h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000393573 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000043481 / day 12h truoc $0.000039928
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.7x nen · $94 / nen $136
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 3.13x nen · bien do 4h = 1.31x nen
+
+Gato  55A3VxMBfzw6uSe64zms5iMPw9k6kx9WzzusbCU6pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000103784 = 6.9% dinh  (cua <=25%) · 274h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000374991 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000065485 / day 12h truoc $0.000042751
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.7x nen · $1,544 / nen $2,128
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.61x nen · bien do 4h = 0.93x nen
+
+darwin  5VnbrKp28Qs9CAH6PyZdxBNvLxZcbeX3YBsozgWnpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000023749 = 1.6% dinh  (cua <=25%) · 468h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000368503 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000023749 / day 12h truoc $0.000023729
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.5x nen · $22 / nen $46
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.06x nen · bien do 4h = 1.26x nen
+
+CLAWHUNTER  6GGY8GViCR5v4xR4Lxb4nfiAJsEoJua5Gj6YecxbJ4BQ  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000315711 = 22.9% dinh  (cua <=25%) · 403h tu dinh
+   VE 2 ✅ da nam li  : 21/24 gio nam duoi $0.00034482 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000247811 / day 12h truoc $0.000232118
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $19 / nen $164
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.16x nen · bien do 4h = 0.28x nen
+
+TM  6KDpQM4BVDdtAkjtyFDiBCkbii8q8BieEyXXm6kNpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000064369 = 4.9% dinh  (cua <=25%) · 452h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000330932 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000057144 / day 12h truoc $0.000055978
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $32 / nen $130
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.05x nen · bien do 4h = 0.20x nen
+
+HI  6iAj2oywQMiD9NeyTcW1S7UtG7e3jSK7Ud5ZJDqJpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000035095 = 3.1% dinh  (cua <=25%) · 613h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000282025 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000033291 / day 12h truoc $0.000032844
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $1 / nen $306
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.22x nen · bien do 4h = 0.76x nen
+
+hi  6x4Z2dr5DgHUBCKvta8T8GNsFTxJhsBZxNrycWQ8pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000046082 = 5.3% dinh  (cua <=25%) · 276h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000215643 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000046082 / day 12h truoc $0.000046003
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.0x nen · $314 / nen $325
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.86x nen · bien do 4h = 1.51x nen
+
+BOTIFY  7C94RweVKZtBhA291WpXW7pkYEnbqhGvCFTU8nPoBTFY  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000114694 = 5.4% dinh  (cua <=25%) · 748h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000527132 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000107062 / day 12h truoc $0.000089544
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $1 / nen $76
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.15x nen · bien do 4h = 1.05x nen
+
+Agency  7VertkgF9KLhxxJXHX6uaWuoYZTP9LdGj2bWmVXVpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000436541 = 1.9% dinh  (cua <=25%) · 599h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.005842924 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000424729 / day 12h truoc $0.000409644
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.9x nen · $2,097 / nen $1,106
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.37x nen · bien do 4h = 0.46x nen
+
+APECAT  7XiFJgX4nkER8gTH1LXUX1VEBJrLRSZfFXuzDy8ccWGT  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000077592 = 7.1% dinh  (cua <=25%) · 761h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000273457 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000075448 / day 12h truoc $0.000071018
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.3x nen · $93 / nen $71
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.25x nen · bien do 4h = 2.23x nen
+
+Nasduck  7Y7V1a4m2nWK7BMgbka5B4vR1pDvCK7yva3Hnrqkraze  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000052764 = 7.2% dinh  (cua <=25%) · 853h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000182207 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000052764 / day 12h truoc $0.000052086
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.3x nen · $36 / nen $127
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.39x nen · bien do 4h = 0.39x nen
+
+CURVE  7ioeSgzfSKHMnpgfPpgRFsekMBGiu9oi6t6GeqYtNbbh  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000111762 = 9.7% dinh  (cua <=25%) · 523h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000287227 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000109184 / day 12h truoc $0.000108964
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.2x nen · $12 / nen $10
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.15x nen · bien do 4h = 0.71x nen
+
+Zoe  7n8kRipxAQBfpGQtcGA2AbkM2HASSVCzqZ5F3QEopump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000041404 = 6.3% dinh  (cua <=25%) · 840h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000165043 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000039982 / day 12h truoc $0.000037408
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $3 / nen $43
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.42x nen · bien do 4h = 0.71x nen
+
+Martians  7nLukVng5teXze14rum9v57juXLjUp7JJnCveko1pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000067427 = 13.4% dinh  (cua <=25%) · 865h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000126173 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00006472 / day 12h truoc $0.000062779
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $1 / nen $26
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.25x nen · bien do 4h = 0.62x nen
+
+Cog  7rSpKgASuXN5hfw3jsKNZN6ysNCR1Eixb2PD2Nd9pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000051134 = 24.0% dinh  (cua <=25%) · 700h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000053221 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000049315 / day 12h truoc $0.000048856
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.9x nen · $6 / nen $6
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 6.90x nen · bien do 4h = 2.13x nen
+
+JubJub  88t4EdAjiuUDzHujJnK5nywitQzYQWEJq2ouUgRGpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000040687 = 1.2% dinh  (cua <=25%) · 492h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000870097 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000040687 / day 12h truoc $0.000039508
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 57.1x nen · $110 / nen $1
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.43x nen · bien do 4h = 0.89x nen
+
+PUNCH  8HJY9GTiEGgPoUAs3YSRiwLUukZKhKcH1ngqLB8qcBxx  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000034288 = 15.6% dinh  (cua <=25%) · 587h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000054944 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000033578 / day 12h truoc $0.00003234
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.9x nen · $93 / nen $48
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.10x nen · bien do 4h = 0.14x nen
+
+EMBERCAT  8iYPW781jBDu8zkC6PFY8WpvtbHxSVMgBX8aPnNmRY3z  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.00002218 = 1.6% dinh  (cua <=25%) · 890h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000344587 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000019221 / day 12h truoc $0.000018292
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $152
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.95x nen · bien do 4h = 0.77x nen
+
+SAPIJIJU  8jayQDfRc3GYxftBJ2VAwjqmRBdYPC9KnjY15rc9pump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000183579 = 3.8% dinh  (cua <=25%) · 537h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001195902 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000172045 / day 12h truoc $0.000168393
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $38
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.29x nen · bien do 4h = 0.70x nen
+
+CALI  8k4sBtEeK4pf26noKqApv8NBTnuSJcbdwpKYknk5PbAA  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000212166 = 2.2% dinh  (cua <=25%) · 763h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.0023788 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000206846 / day 12h truoc $0.000202678
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.5x nen · $359 / nen $744
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.56x nen · bien do 4h = 0.63x nen
+
+SOLCAT  9U1f18idDeySFnYrurxqT1f5n5nE4g4Uk5LLzP69bh1  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000024055 = 1.8% dinh  (cua <=25%) · 879h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000339621 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000024055 / day 12h truoc $0.000020039
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $17
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.12x nen · bien do 4h = 0.97x nen
+
+SI  9aqmJjCnnMQv42TXLk921ceUkN35nea2QP969n1caqjj  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000444187 = 5.7% dinh  (cua <=25%) · 668h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001945941 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000441916 / day 12h truoc $0.000437805
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $464 / nen $1,989
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.85x nen · bien do 4h = 0.61x nen
+
+FLAME  9oXA1VWKNiYDYa6VKHBFFBBvZdvuhw1b2eD5Aka7YrVt  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000119965 = 10.0% dinh  (cua <=25%) · 810h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000298648 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000119965 / day 12h truoc $0.00010312
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $40 / nen $170
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.14x nen · bien do 4h = 0.29x nen
+
+Jane  9pJWJdpPebyANys45eetpemLJo8yTz4n5B9zbpYw9ZMr  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000023207 = 1.4% dinh  (cua <=25%) · 456h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.0004069 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000006043 / day 12h truoc $0.000005861
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 211.1x nen · $5,299 / nen $25
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 103.17x nen · bien do 4h = 32.30x nen
+
+ALX  A7iQ8N5jKDrg1YUxJ7v8aN5AtkwJaUTNhq1jZ8YLFrAJ  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000020245 = 2.8% dinh  (cua <=25%) · 640h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000183002 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000019978 / day 12h truoc $0.000019227
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 8.3x nen · $98 / nen $11
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.94x nen · bien do 4h = 1.34x nen
+
+moonkey  BRZ5aeJCDuruA42V1CntqKvofa2G7DS3yyxx1pZEpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000166048 = 15.4% dinh  (cua <=25%) · 764h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000269377 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00016589 / day 12h truoc $0.000156606
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $57 / nen $359
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.69x nen · bien do 4h = 1.80x nen
+
+texcat  BdXfLfcbDE8YvpbvvmmGTduqcDesaQVUm5xLxgUc2S5t  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000137437 = 23.9% dinh  (cua <=25%) · 209h tu dinh
+   VE 2 ✅ da nam li  : 20/24 gio nam duoi $0.000144049 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000126573 / day 12h truoc $0.000109284
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.4x nen · $584 / nen $1,598
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.33x nen · bien do 4h = 0.70x nen
+
+LOOM  CB1YQfUzgsnaCd93cZLdiX1uASW7utWBaYMUsvcwNUBV  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000087739 = 3.5% dinh  (cua <=25%) · 935h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000621144 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000087739 / day 12h truoc $0.000084482
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.5x nen · $17 / nen $36
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.45x nen · bien do 4h = 1.14x nen
+
+MENSA  CFPkPq1eYPR8GLzEo59wUbbMioX4bshaTQiSGzTSpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.00015645 = 19.0% dinh  (cua <=25%) · 974h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000206202 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.00015645 / day 12h truoc $0.000156122
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $1 / nen $16
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.64x nen · bien do 4h = 0.57x nen
+
+AnyPS5  CWKbSd7jwMXXexP3pbwLAWMzr4HXAXTvt4R9pk2Vyyyc  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000032616 = 3.4% dinh  (cua <=25%) · 456h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000241255 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000030228 / day 12h truoc $0.000030171
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.3x nen · $148 / nen $115
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.81x nen · bien do 4h = 0.65x nen
+
+parafactual  CvUX4G2tzq7J3ECmNvWZLayZYV6KpgQp6SJ5K8Uvsu5g  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000063741 = 2.1% dinh  (cua <=25%) · 769h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.00076131 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000060024 / day 12h truoc $0.000054872
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $24 / nen $161
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.35x nen · bien do 4h = 0.48x nen
+
+GO  D1YZZg9dBZ7AbfknZVbaeVLto36eySwoFYEVhZrD4F4n  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000038657 = 0.4% dinh  (cua <=25%) · 787h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.002377369 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000037762 / day 12h truoc $0.000035358
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.6x nen · $10 / nen $16
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.17x nen · bien do 4h = 0.34x nen
+
+KMS  D1sm1V3pHGTv32ugeXoer4a91xqfuh4jJBYQwePSKVez  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000045893 = 5.4% dinh  (cua <=25%) · 821h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000212224 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000038569 / day 12h truoc $0.000038383
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.3x nen · $298 / nen $231
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.07x nen · bien do 4h = 0.65x nen
+
+Leafy  DD3AC2Cmr5rXzJ6ErRHeryx3ASLVMhSBALiUqeKcpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000374746 = 22.4% dinh  (cua <=25%) · 972h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000418747 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000374401 / day 12h truoc $0.000365584
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.5x nen · $101 / nen $220
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.00x nen · bien do 4h = 1.05x nen
+
+Normie  DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000151603 = 10.4% dinh  (cua <=25%) · 297h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000363195 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000139238 / day 12h truoc $0.000127352
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.7x nen · $509 / nen $757
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.20x nen · bien do 4h = 0.39x nen
+
+cc  E3i7sTY5QYEBh3itepnomZQt7Eh5kzmHFk1vkm2pump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000040775 = 5.2% dinh  (cua <=25%) · 994h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.00019636 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000040775 / day 12h truoc $0.000039355
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.9x nen · $5 / nen $2
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.14x nen · bien do 4h = 0.70x nen
+
+HeeHaw  EEpng77ZPn9FbgbT4xsRjwuxNCcMBYq3HTwEscyTpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000262326 = 5.2% dinh  (cua <=25%) · 484h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001265121 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000250335 / day 12h truoc $0.000227695
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $4 / nen $1,260
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.67x nen · bien do 4h = 1.13x nen
+
+wheelsmith  EHpaxqVVjyyPt2cjfft5SqTkfaEjCF7RUCaFxCrZpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.00002267 = 4.3% dinh  (cua <=25%) · 936h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000132402 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000021453 / day 12h truoc $0.000020877
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $7 / nen $33
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.20x nen · bien do 4h = 0.66x nen
+
+Kurumi  Ew8KqgSitYucieR5KnSAL2SUFspcwA8AgSuZ5xWspump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000140228 = 9.9% dinh  (cua <=25%) · 552h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000352653 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000137058 / day 12h truoc $0.000127026
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $5 / nen $173
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.43x nen · bien do 4h = 1.09x nen
+
+CHONK  FeAWY9L9hr82TvTuEyi328V9FP7GxVuGLx7xNg6kzWVa  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000041571 = 4.7% dinh  (cua <=25%) · 499h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000219191 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000031837 / day 12h truoc $0.000030079
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $40 / nen $215
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.14x nen · bien do 4h = 0.27x nen
+
+USEFUL  GWTP6M5bxhaJ1k2Kxvf8hhYaHE6jZMhh4cKzFuCpnc83  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000261776 = 12.9% dinh  (cua <=25%) · 947h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000505872 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000261776 / day 12h truoc $0.000261732
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $0 / nen $125
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.11x nen · bien do 4h = 0.56x nen
+
+COMPUTE  GWe3TNg1UPxeaSazxK8U49PDAqXCaX9Jc8zbttFLpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000036935 = 6.6% dinh  (cua <=25%) · 233h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000138909 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000032896 / day 12h truoc $0.000031141
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $37 / nen $779
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.06x nen · bien do 4h = 0.48x nen
+
+ELON  GY9mZfyPpxXxBXBxS2hB2XjhP3kfUsywTvgveozxpump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000161715 = 2.6% dinh  (cua <=25%) · 781h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001528118 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000161715 / day 12h truoc $0.000160678
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.0x nen · $2 / nen $264
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.65x nen · bien do 4h = 2.22x nen
+
+Ajax  H9qKeikv2EuifXaMCWSFQSUvNHUu2dre9R3Gmz62mvjw  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.00008981 = 7.2% dinh  (cua <=25%) · 627h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000310714 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000088636 / day 12h truoc $0.000087433
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.4x nen · $24 / nen $68
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.72x nen · bien do 4h = 0.89x nen
+
+TWEETCRAFT  HzYCHqAN2uoHGRnL9v2ChCfFQX3bvJuJd5zu2Hd5MZQy  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000024112 = 0.7% dinh  (cua <=25%) · 499h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000855183 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000023722 / day 12h truoc $0.0000229
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 4.9x nen · $58 / nen $11
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.31x nen · bien do 4h = 0.33x nen
+
+JACK  J1yxV53EmVRmt9RUj6PPufMfdAYUbtgwXCuNYTBTsYzJ  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000027596 = 1.4% dinh  (cua <=25%) · 712h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000507205 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000027226 / day 12h truoc $0.000027121
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 1.2x nen · $23 / nen $19
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.15x nen · bien do 4h = 1.24x nen
+
+WhiteWhale  a3W4qutoEJA4232T2gwZUfgYJTetr96pU4SJMwppump  [DAI SAN · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000974795 = 23.9% dinh  (cua <=25%) · 477h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001019471 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000974795 / day 12h truoc $0.000950369
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $14 / nen $196
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.07x nen · bien do 4h = 0.56x nen
+
+FARM  hKyXZVKmrBDPhKKhdSaaGf1qrFwUkwjqrdzRc63farm  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000003872 = 2.5% dinh  (cua <=25%) · 407h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000038073 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000003872 / day 12h truoc $0.00000385
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.1x nen · $3 / nen $32
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 0.17x nen · bien do 4h = 0.32x nen
+
+COLLECT  nDZknLvfFRp5rgUHdzTrQsmSY5NKzoavqdLjSHVpump  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000020317 = 0.3% dinh  (cua <=25%) · 642h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.001459864 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000020317 / day 12h truoc $0.000020238
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 0.2x nen · $0 / nen $5
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 2.59x nen · bien do 4h = 1.64x nen
+
+xp  pgtgG6UCiyA49ShyETG2wpcMAvtLSvNp22UaJ1FWp3P  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000025294 = 1.2% dinh  (cua <=25%) · 597h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.000524807 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000024462 / day 12h truoc $0.000024353
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 10.2x nen · $99 / nen $9
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.91x nen · bien do 4h = 1.67x nen
+
+RUNUP  runupS9JpTdB169taDKykxa2y8fqxghqeJYCqr9cAk3  [DUOI SAN — chi ghi so · nguon so]
+   VE 1 ✅ da rot nat : gia $0.000157199 = 13.9% dinh  (cua <=25%) · 786h tu dinh
+   VE 2 ✅ da nam li  : 24/24 gio nam duoi $0.00028221 (cua >=20)
+   VE 3 ✅ het tao day: day 12h sau $0.000144951 / day 12h truoc $0.000134863
+   KHOI LUONG (mo ta, KHONG phai cua chan): 1h = 2.8x nen · $984 / nen $352
+   LO XO (v4, mo ta, KHONG phai cua chan): khoi luong 4h = 1.14x nen · bien do 4h = 0.91x nen
+
+---- PHA A XONG [345 cu · 3539 giay] ----
+CAN RUGCHECK cho 64 mint (Claude lay bang Chrome, luu vao rc.json):
